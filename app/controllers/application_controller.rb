@@ -3,10 +3,10 @@ class ApplicationController < ActionController::Base
 
   include Slimmer::Headers
 
-  before_filter :set_slimmer_template
+  # before_filter :set_slimmer_template
 
-  def set_slimmer_template
-  	set_slimmer_headers(template: "header_footer_only")
-  end
+  # def set_slimmer_template
+  # 	# set_slimmer_headers(template: "header_footer_only")
+  # end
 
 end

@@ -4,6 +4,8 @@ gem 'rails', '3.2.17'
 
 gem 'slimmer'
 
+gem 'govspeak'
+
 gem 'govuk_frontend_toolkit', '1.0.0'
 
 # Bundle edge Rails instead:

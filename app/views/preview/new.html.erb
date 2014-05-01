@@ -3,7 +3,7 @@
 <form method="post" action="/preview/" class="govspeak-preview-input">
 
 	<label for="govspeak_input"></label>
-	<textarea id="govspeak_input" name="govspeak"></textarea>
+	<textarea id="govspeak_input" name="govspeak"><%= @govspeak_input %></textarea>
 
 	<input class="buig button" type="submit" value="Preview" />
 
@@ -11,6 +11,6 @@
 
 <h2>Govspeak out:</h2>
 
-<div class="govspeak-preview-output">
+<article class="govspeak-preview-output">
 	<%= @govspeak_output %>
-</div>
+</article>
