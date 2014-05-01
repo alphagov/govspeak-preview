@@ -3,7 +3,7 @@ GovspeakPreview::Application.routes.draw do
   # first created -> highest priority.
 
   # Sample of regular route:
-  match '/' => 'preview#index'
+  #   match '/' => 'preview#index'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -11,7 +11,7 @@ GovspeakPreview::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  resources :preview
 
   # Sample resource route with options:
   #   resources :products do
@@ -48,7 +48,7 @@ GovspeakPreview::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'preview#new'
 
   # See how all your routes lay out with "rake routes"
 
