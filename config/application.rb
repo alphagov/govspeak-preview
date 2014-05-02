@@ -64,5 +64,8 @@ module GovspeakPreview
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Point to a version of static available anywhere
+    config.slimmer.asset_host = 'http://static.preview.alphagov.co.uk/'
   end
 end
