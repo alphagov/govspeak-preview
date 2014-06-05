@@ -1,8 +1,28 @@
 @import "grid_layout.scss";
 
+#global-header-bar,
 #global-breadcrumb,
-#user-satisfaction-survey {
+#global-cookie-message,
+#user-satisfaction-survey,
+#search {
 	display: none;
+}
+
+.header-logo {
+	a {
+		display: none;
+	}
+
+	&:after {
+		content: "Govspeak Preview" !important;
+		height: 30px;
+		width: 100%;
+		margin: 0 15px;
+		font-weight: bold;
+		font-size: 30px;
+		color: #fff;
+		line-height: 1;
+	}
 }
 
 .outer-block {
