@@ -1,5 +1,10 @@
 @import "grid_layout.scss";
 
+#global-breadcrumb,
+#user-satisfaction-survey {
+	display: none;
+}
+
 .outer-block {
   @include outer-block;
 }
@@ -10,19 +15,23 @@
 
 
 .govspeak-preview-input {
-
-	margin: 1em 0 2em 0;
+	background: #f6f6f6;
+	padding: 1em 0 2em;
 
 	textarea {
 		width: 100%;
-		height: 20em;
+		height: 10em;
 	}
 }
 
 
 .govspeak-preview-output {
-	margin: 2em 0 2em 0;
+	border-top: 1px solid #aaa;
 	padding: 2em 0;
-	border-top: 1px solid #ccc;
+}
 
+code {
+	font-family: monospace;
+	background: #f6f6f6;
+	padding: .1em .25em;
 }

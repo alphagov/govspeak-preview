@@ -1,16 +1,30 @@
-<h1>Govspeak in:</h1>
+<div class="govspeak-preview-input">
+	<div class="outer-block">
+		<div class="inner-block">
 
-<form method="post" action="/preview/" class="govspeak-preview-input">
+			<p><a href="https://github.com/alphagov/govspeak">Govspeak</a> is a simplified 'markup' language based on <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>. It's designed to be as easy-to-read and easy-to-write as possible, using simple punctuation instead of complicated tags and code.</p>
 
-	<label for="govspeak_input"></label>
-	<textarea id="govspeak_input" name="govspeak"><%= @govspeak_input %></textarea>
+			<p>Check out the <a href="https://github.com/alphagov/govspeak/wiki/Using-govspeak-on-GOV.UK">usage docs</a> &ndash; or <a href="/?styleguide=markdown">try</a>, <a href="/?styleguide=govspeak">some</a>, <a href="/?styleguide=sa_outcome">examples</a>.</p>
 
-	<input class="buig button" type="submit" value="Preview" />
+			<form method="post" action="/preview/">
 
-</form>	
+				<label for="govspeak_input"></label>
+				<textarea id="govspeak_input" name="govspeak"><%= @govspeak_input %></textarea>
 
-<h2>Govspeak out:</h2>
+				<input class="buig button" type="submit" value="Preview it" />
 
-<article class="govspeak-preview-output">
-	<%= @govspeak_output %>
-</article>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="govspeak-preview-output">
+	<div class="outer-block">
+		<div class="inner-block">
+
+			<article>
+				<%= @govspeak_output %>
+			</article>
+		</div>
+	</div>
+</div>
