@@ -5,7 +5,7 @@
 #global-cookie-message,
 #user-satisfaction-survey,
 #search {
-	display: none;
+	display: none !important;
 }
 
 .header-logo {
@@ -48,6 +48,7 @@
 .govspeak-preview-output {
 	border-top: 1px solid #aaa;
 	padding: 2em 0;
+	max-width: 
 }
 
 code {
