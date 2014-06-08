@@ -48,7 +48,13 @@
 .govspeak-preview-output {
 	border-top: 1px solid #aaa;
 	padding: 2em 0;
-	max-width: 
+
+	.inner-block {
+		// Enforce a reasonable line length, roughly equiv to GOV.UK behaviour
+		// @TODO: Use something from FET (or template) to have the exact same
+		// behaviour, rather than roughly immitating with a specific value
+		max-width: 42em;
+	}
 }
 
 code {
