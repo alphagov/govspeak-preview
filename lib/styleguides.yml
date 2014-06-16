@@ -14,57 +14,69 @@ markdown: |
 
   ## Basic conventions for Markdown files
 
-    * Wrap all lines at 80 characters.
-    * Denote **bold** text using the asterisk format: `**bold text**`.
-    * Denote _italic_ text using the underscore format: `_emphasized text_`.
-    * Force a linebreak by ending a line with two spaces, no more.
+  You should:
+
+    * wrap all lines at 80 characters
+    * make **bold** text using the asterisk format: `**bold text**`
+    * make _italic_ text using the underscore format: `_emphasized text_`
+    * force a linebreak by ending a line with 2 spaces, no more
 
   ## Headings
 
-    * Header text must use the `atx-style` with no closing `#` character.
-    * Include a space between the `#` and the text of the Header
-    * Headers spanning more than 80 characters should be re-evaluated.
-    * Headers must be preceded and followed by a newline except at the beginning
-      of a file.
+  Header text must use the `atx-style` with no closing `#` character.
+
+  Include a space between the `#` and the text of the Header.
+
+  You shouldn’t use a header that has more than 80 characters.
+
+  You must put a new line before and after a Header except at the beginning of a file.
 
   ## Lists
 
-    * **List items** must be indented 2 spaces further than their parent.
+  When using lists, you must:
 
-    * The first level of list items must not be preceded by a newline.
-    * All lists must be followed by newlines.
-    * List item lines exceeding 80 characters should, when wrapped, align
-      vertically with the beginning of the preceding line's text.
+    * indent list items 2 spaces further than their parent
+    * put a newline after all lists
+    * make sure list item lines more than 80 characters should, when wrapped, align
+      vertically with the beginning of the preceding line's text
+
+  ^Don’t put the 1st level of list items immediately after a new line.^
+
 
   ## Tables
 
   Like fenced code blocks, tables in Markdown are provided by Markdown Extra
   which seems to be pretty widely implemented.
 
-    * Pipe characters must be preceded and followed by spaces for readability.
-    * Table column width should be determined by the longest cell in the column.
-    * Always format tables so they are readable in pre-processing.
-    * Tables must always be preceded and followed by newlines.
+  Make sure that:
 
-  ### Table example:
+    * pipe characters are preceded and followed by spaces for readability
+    * the table column width is determined by the longest cell in the column
+    * the tables are formatted so they’re readable in pre-processing
+    * the tables always be preceded and followed by newlines
 
-  _A handsome table in pre-processed markdown is also handsome when rendered:_
+  ### Table example
 
-  Group                     | Domain          | First Appearance
+  A handsome table in pre-processed markdown is also handsome when rendered:
+
+  Food                      | Kind            | Tasty?
   ------------------------- | --------------- | ----------------
-  ShinRa                    | Mako Reactors   | FFVII
-  Moogles                   | MogNet          | FFIII
-  Vana'diel Chocobo Society | Chocobo Raising | FFXI:TOAU
+  Bananas                   | Fruit           | Yes
+  Aubergines                | Vegtable        | No
+  Aprictos                  | Fruit           | Yes
+
 
 govspeak: |
+
   # Govspeak 
 
-  ^This is an information callout^
+  ^This is an information callout.^
 
-  %This is a warning callout%
+  %This is a warning callout - use it when there’s a risk of getting a fine or going to prison.%
 
   $E
-  **Example**: Open the pod bay doors
+  **Example**   
+  Your income for the last tax year was £30,000. You think your income will drop to £20,000 this tax year. Enter £22,500 into the calculator.
   $E
 
   {::highlight-answer}
@@ -73,9 +85,10 @@ govspeak: |
 
 
   $C
-  **Student Finance England**
-  **Telephone:** 0845 300 50 90
-  **Minicom:** 0845 604 44 34
+  **Student Finance England**   
+  Telephone: 0845 300 5090   
+  Minicom: 0845 604 4434   
+  [Find out about call charges](http://www.gov.uk/call-charges)
   $C
 
   $A
@@ -85,46 +98,39 @@ govspeak: |
   $A
 
   $D
-  [An example form download link](http://example.com/ "Example form")
-
-  Something about this form download
+  [Download the 'Example application form' (PDF, 35KB)](http://example.com/ "Example form")
   $D
 
-  s1. numbers
-  s2. to the start
-  s3. of your list
+  s1. You should use this Markdown for steps.
+  s2. You must use full sentences in each step.
+  s3. You must use a full stop too. 
 
 
-  Special rules apply if you’re exporting a vehicle outside the EU.
+  Make Sure You Use Acronym Markdown (MSYUAM).
 
-  *[EU]:European Union
+  *[MSYUAM]: Make Sure You Use Acronym Markdown
 
-  :england:content goes here:england:
-  :scotland:content goes here:scotland:
-  :london:content goes here:london:
-  :wales:content goes here:wales:
-  :northern-ireland:content goes here:northern-ireland:
-  :england-wales:content goes here:england-wales:
+
 
 sa_outcome: |
-  $!You can apply to register the birth with the Foreign and Commonwealth Office (FCO) in the UK.$!
+  #Register a birth
 
-  %{birth_registration_form}
+  $!You can register a birth with the Foreign and Commonwealth Office (FCO) in the UK.$!
 
-  ##Documents
+  ##Documents you need
 
   You must provide:
 
   - your child’s local birth certificate
-  - your British birth certificates (long version) showing details of your parents
-  - a naturalisation or registration certificate (if either of you were not born in the UK)
+  - your British birth certificates showing details of your parents
+  - a naturalisation or registration certificate
   - your current British passports
-  - a copy of a passport or birth certificate (if one of you isn’t British)
-  - a marriage certificate (if you’re married)
-  - divorce documents (if either of you has ever been divorced)
-  - a change of name document (if either of you has ever changed your name)
+  - a copy of a passport or birth certificate
+  - a marriage certificate
+  - divorce documents 
+  - a change of name document 
 
-  You must provide the originals and a photocopy of each document.
+  ^You must provide the originals and a photocopy of each document.^
 
   ##Cost
 
@@ -133,7 +139,7 @@ sa_outcome: |
   Register a birth | £105
   Copy of a birth registration certificate | £65
 
-  [Pay online](/pay-register-birth-abroad) for the registration and copies of the certificate.
+  [Pay online](http://www.example.com) for the registration and copies of the certificate.
 
   You can also pay by a postal order or bank draft made payable to ‘FCO’. Personal cheques aren’t accepted.
 
@@ -158,7 +164,9 @@ sa_outcome: |
 
   ##Copies of the registration certificate
 
-  You can order copies of the registration certificate from the FCO when you register the birth.
+  You can order copies of the registration certificate when you register the birth.
 
-  Cheaper copies will be available from the [General Register Office](http://www.gro.gov.uk) in the UK, but not until September the year after you register.
+  Cheaper copies are available from the [General Register Office](http://www.gro.gov.uk) in the UK, but not until September the year after you register.
 
+
+  *[FCO]: Foreign and Commonwealth Office
