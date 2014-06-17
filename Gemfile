@@ -4,7 +4,7 @@ gem 'rails', '3.2.17'
 
 gem 'slimmer'
 
-gem 'govspeak'
+gem 'govspeak', '1.5.4'
 
 gem 'govuk_frontend_toolkit', '1.0.0'
 
