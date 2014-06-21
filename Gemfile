@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.17'
+gem 'rails', '4.1.1'
 
-gem 'slimmer'
+gem 'slimmer', '4.1.0'
 
-gem 'govspeak', '1.5.4'
+gem 'govspeak', '1.6.1'
 
-gem 'govuk_frontend_toolkit', '1.0.0'
+gem 'govuk_frontend_toolkit', '1.3.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
