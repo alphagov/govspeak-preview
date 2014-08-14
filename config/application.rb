@@ -66,6 +66,6 @@ module GovspeakPreview
     config.assets.version = '1.0'
 
     # Point to a version of static available anywhere
-    config.slimmer.asset_host = 'http://static.preview.alphagov.co.uk/'
+    config.slimmer.asset_host = 'https://assets-origin.preview.alphagov.co.uk/'
   end
 end
