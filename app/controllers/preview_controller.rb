@@ -14,7 +14,8 @@ class PreviewController < ApplicationController
 	end
 
 	def create
-		@govspeak_output = Govspeak::Document.new(params[:govspeak]).to_html.html_safe
+		@govspeak_doc = Govspeak::Document.new(params[:govspeak])
+		@govspeak_output = @govspeak_doc.to_html.html_safe
 		@govspeak_input = params[:govspeak]
 		render :new
 	end
