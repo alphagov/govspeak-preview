@@ -14,6 +14,9 @@ group :assets do
   gem 'uglifier'
 end
 
-group :development do
+group :development, :test do
   gem 'listen'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'capybara'
+  gem 'poltergeist'
 end
