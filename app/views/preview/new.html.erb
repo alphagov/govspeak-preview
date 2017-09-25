@@ -1,29 +1,34 @@
 <div class="govspeak-preview-input">
-	<p><a href="https://github.com/alphagov/govspeak">Govspeak</a> is a simplified 'markup' language based on
-		<a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>.
-		It's designed to be as easy-to-read and easy-to-write as possible, using
-		simple punctuation instead of complicated tags and code.</p>
+  <p>
+    <a href="https://github.com/alphagov/govspeak">Govspeak</a> is a simplified 'markup' language based on
+    <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>.
+    It's designed to be as easy-to-read and easy-to-write as possible, using
+    simple punctuation instead of complicated tags and code.
+  </p>
 
-	<p>Check out the <a href="http://govspeak-guide.herokuapp.com">usage docs</a>
-		&ndash; or <a href="/?styleguide=markdown">try</a>,
-		<a href="/?styleguide=govspeak">some</a>,
-		<a href="/?styleguide=sa_outcome">examples</a>.</p>
+  <p>
+    Check out the <a href="http://govspeak-guide.herokuapp.com">usage docs</a>
+    &ndash; or <a href="/?styleguide=markdown">try</a>,
+    <a href="/?styleguide=govspeak">some</a>,
+    <a href="/?styleguide=sa_outcome">examples</a>.
+  </p>
 
-	<form method="post" action="/preview/">
-		<label for="govspeak_input"></label>
-		<textarea id="govspeak_input" name="govspeak"><%= @govspeak_input %></textarea>
+  <form method="post" action="/preview/">
+    <label for="govspeak_input"></label>
+    <textarea id="govspeak_input" name="govspeak"><%= @govspeak_input %></textarea>
 
-		<%= render "govuk_component/button", {
-		  text: "Preview it"
-		} %>
-	</form>
+    <%= render "govuk_component/button", {
+      text: "Preview it"
+    } %>
+  </form>
 </div>
 
 <div class="govspeak-preview-output">
-	<% if (@govspeak_doc && !@govspeak_doc.valid?) %>
-		<p class="validation-warning">This govspeak doesn't validate and may not be accepted by publishing tools</p>
-	<% end %>
-	<article>
-		<%= render 'govuk_component/govspeak', content: @govspeak_output, rich_govspeak: true %>
-	</article>
+  <% if (@govspeak_doc && !@govspeak_doc.valid?) %>
+    <p class="validation-warning">This govspeak doesn't validate and may not be accepted by publishing tools</p>
+  <% end %>
+
+  <article>
+    <%= render 'govuk_component/govspeak', content: @govspeak_output, rich_govspeak: true %>
+  </article>
 </div>
