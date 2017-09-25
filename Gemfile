@@ -1,5 +1,6 @@
-ruby '2.3.0'
 source 'https://rubygems.org'
+
+ruby File.read('.ruby-version').chomp
 
 gem 'rails', '3.2.18'
 
