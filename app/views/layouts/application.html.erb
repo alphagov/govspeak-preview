@@ -2,12 +2,17 @@
 <html>
 <head>
   <title>Govspeak Preview</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div id="wrapper">
+    <ul class="nav">
+      <li><%= link_to_unless current_page?(root_path), "Govspeak Preview", root_path %></li>
+      <li><%= link_to_unless current_page?(convert_index_path), "Convert Google Doc to Govspeak", convert_index_path %></li>
+    </ul>
+
     <%= yield %>
   </div>
 </body>
