@@ -165,6 +165,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    reverse_markdown (1.0.3)
+      nokogiri
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -191,6 +193,7 @@ GEM
       tins (<= 1.6.0)
     ruby-progressbar (1.8.1)
     ruby_dep (1.5.0)
+    rubyzip (1.2.1)
     safe_yaml (1.0.4)
     sanitize (2.1.0)
       nokogiri (>= 1.4.4)
@@ -254,7 +257,9 @@ DEPENDENCIES
   poltergeist
   puma
   rails (= 5.1.4)
+  reverse_markdown (~> 1.0.3)
   rspec-rails (~> 3.5)
+  rubyzip (~> 1.2.1)
   sass-rails
   slimmer (= 11.1.1)
   uglifier

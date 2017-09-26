@@ -14,6 +14,15 @@
   @include button;
 }
 
+.nav {
+  margin: $gutter/2 0;
+
+  li {
+    margin-right: $gutter/2;
+    display: inline-block;
+  }
+}
+
 .header-logo {
   a {
     display: none;

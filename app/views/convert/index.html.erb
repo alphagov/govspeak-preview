@@ -1,0 +1,34 @@
+<div class="govspeak-preview-input">
+  <p>
+    Converts Google Docs into <a href="https://github.com/alphagov/govspeak">Govspeak</a> ready for Specialist Publisher.<br/>
+  </p>
+
+  <p>
+    To download the file, go to Google Docs and click <%= link_to "File > Download as > Web page (.html, zipped)", image_url("govspeak-preview.gif") %>
+  </p>
+
+  <%= form_tag({ action: :create }, multipart: true) do %>
+    <label for="govspeak_input"></label>
+    <%= file_field_tag "upload[file]" %>
+    <input type="submit" class="submit-button" value="Convert" />
+  <% end %>
+</div>
+
+<% if @govspeak_input %>
+<div class="govspeak-preview-input">
+  <form>
+    <label for="govspeak_input">Converted Govspeak:</label>
+    <textarea id="govspeak_input" name="govspeak"><%= @govspeak_input %></textarea>
+  </form>
+</div>
+<% end %>
+
+<div class="govspeak-preview-output">
+  <% if (@govspeak_doc && !@govspeak_doc.valid?) %>
+    <p class="validation-warning">This govspeak doesn't validate and may not be accepted by publishing tools</p>
+  <% end %>
+
+  <article>
+    <%= render 'govuk_component/govspeak', content: @govspeak_output %>
+  </article>
+</div>
