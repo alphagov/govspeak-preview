@@ -1,0 +1,32 @@
+{
+  "name": "govspeak-preview",
+  "scripts": {
+  },
+  "env": {
+    "HEROKU_POSTGRESQL_TEAL_URL": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "PLEK_SERVICE_STATIC_URI": "assets.publishing.service.gov.uk",
+    "GOVUK_APP_DOMAIN": "www.gov.uk",
+    "GOVUK_WEBSITE_ROOT": "https://www.gov.uk"
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
