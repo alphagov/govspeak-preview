@@ -1,6 +1,4 @@
 markdown: |
-  # Style Guidelines: Markdown
-
   This document contains formatting standards for creating readable, consistent
   files using Markdown.
 
@@ -67,15 +65,12 @@ markdown: |
 
 
 govspeak: |
-
-  # Govspeak 
-
   ^This is an information callout.^
 
   %This is a warning callout - use it when there’s a risk of getting a fine or going to prison.%
 
   $E
-  **Example**   
+  **Example**
   Your income for the last tax year was £30,000. You think your income will drop to £20,000 this tax year. Enter £22,500 into the calculator.
   $E
 
@@ -85,9 +80,9 @@ govspeak: |
 
 
   $C
-  **Student Finance England**   
-  Telephone: 0845 300 5090   
-  Minicom: 0845 604 4434   
+  **Student Finance England**
+  Telephone: 0845 300 5090
+  Minicom: 0845 604 4434
   [Find out about call charges](http://www.gov.uk/call-charges)
   $C
 
@@ -103,7 +98,7 @@ govspeak: |
 
   s1. You should use this Markdown for steps.
   s2. You must use full sentences in each step.
-  s3. You must use a full stop too. 
+  s3. You must use a full stop too.
 
 
   Make Sure You Use Acronym Markdown (MSYUAM).
@@ -113,8 +108,6 @@ govspeak: |
 
 
 sa_outcome: |
-  #Register a birth
-
   $!You can register a birth with the Foreign and Commonwealth Office (FCO) in the UK.$!
 
   ##Documents you need
@@ -127,8 +120,8 @@ sa_outcome: |
   - your current British passports
   - a copy of a passport or birth certificate
   - a marriage certificate
-  - divorce documents 
-  - a change of name document 
+  - divorce documents
+  - a change of name document
 
   ^You must provide the originals and a photocopy of each document.^
 

@@ -8,4 +8,8 @@ Govspeak is a markdown-derived mark-up language used by the [GOV.UK](https://git
 
 It's hosted on [Heroku](http://govspeak-preview.herokuapp.com/), and automatically deployed when `master` changes.
 
+## Running locally
 
+```
+./startup.sh --live
+```
