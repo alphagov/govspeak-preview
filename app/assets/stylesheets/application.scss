@@ -1,5 +1,6 @@
 @import "grid_layout";
 @import "typography";
+@import "design-patterns/buttons";
 
 #global-header-bar,
 #global-breadcrumb,
@@ -7,6 +8,10 @@
 #user-satisfaction-survey,
 #search {
   display: none !important;
+}
+
+.submit-button {
+  @include button;
 }
 
 .header-logo {
