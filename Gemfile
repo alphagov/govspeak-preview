@@ -12,3 +12,7 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
 end
+
+group :development do
+  gem 'listen'
+end
