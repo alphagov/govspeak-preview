@@ -16,10 +16,7 @@
   <form method="post" action="/preview/">
     <label for="govspeak_input"></label>
     <textarea id="govspeak_input" name="govspeak"><%= @govspeak_input %></textarea>
-
-    <%= render "govuk_component/button", {
-      text: "Preview it"
-    } %>
+    <input type="submit" class="submit-button" value="Preview it" />
   </form>
 </div>
 

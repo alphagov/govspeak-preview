@@ -20,3 +20,7 @@ group :development, :test do
   gem 'capybara'
   gem 'poltergeist'
 end
+
+group :test do
+  gem 'webmock', '~> 2.3.2'
+end
