@@ -1,8 +1,8 @@
 # Govspeak Preview
 
-A tiny app for previewing [Govspeak](https://github.com/alphagov/govspeak)
+A tiny app for previewing and converting [Govspeak](https://github.com/alphagov/govspeak).
 
-Govspeak is a markdown-derived mark-up language used by the [GOV.UK](https://github.com/alphagov)
+Govspeak is a markdown-derived mark-up language used by [GOV.UK](https://github.com/alphagov).
 
 ## Deployment
 
