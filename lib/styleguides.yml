@@ -60,8 +60,8 @@ markdown: |
   Food                      | Kind            | Tasty?
   ------------------------- | --------------- | ----------------
   Bananas                   | Fruit           | Yes
-  Aubergines                | Vegtable        | No
-  Aprictos                  | Fruit           | Yes
+  Aubergines                | Vegetable       | No
+  Apricots                  | Fruit           | Yes
 
 
 govspeak: |
