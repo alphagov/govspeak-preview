@@ -5,9 +5,9 @@ RSpec.feature "Govspeak guide", type: :feature do
     visit "/guide"
 
     expect(page).to have_content("What is govspeak?")
-
-    # Check markdown is turned into a link
-    expect(page).to have_css("a[href="http://www.parliament.uk"]")
     expect(page).to have_content("UK Parliament")
+
+    # Check markdown has rendered button
+    expect(page).to have_content("<p><a role=\\\"button\\\" class=\\\"button button-start\\\" href=\\\"https://example.com/external-service/start-now\\\" data-module=\\\"cross-domain-tracking\\\" data-tracking-code=\\\"UA-XXXXXX-Y\\\" data-tracking-name=\\\"govspeakButtonTracker\\\">Start Now</a></p")
   end
 end
