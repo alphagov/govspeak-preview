@@ -18,7 +18,7 @@ end
 
 group :development, :test do
   gem 'listen'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
   gem 'poltergeist'
   gem 'govuk-lint'
