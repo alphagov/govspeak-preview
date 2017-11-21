@@ -238,13 +238,15 @@ $A
 ##Buttons
 
 
-To get the most basic button.
+###Default button
 
     {button}[Continue](https://gov.uk/random){/button}
 
 which looks like this:
 
 {button}[Continue](https://gov.uk/random){/button}
+
+###Start now button
 
 To turn a button into a ['Start now' button](https://www.gov.uk/service-manual/design/start-pages#start-page-elements), you can pass `start` to the button tag.
 These buttons should only appear once per page, and be used at the start of a transaction.
@@ -254,6 +256,8 @@ These buttons should only appear once per page, and be used at the start of a tr
 which looks like this:
 
 {button start}[Start Now](https://gov.uk/random){/button}
+
+###Cross domain tracking button
 
 You can pass a Google Analytics [tracking id](https://support.google.com/analytics/answer/7372977?hl=en) which will send page views to another domain, this is used to help services understand the start of their users journeys.
 
