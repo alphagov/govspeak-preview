@@ -250,24 +250,24 @@ which looks like this:
 To turn a button into a ['Start now' button](https://www.gov.uk/service-manual/design/start-pages#start-page-elements), you can add `start` to the button tag.  
 These buttons should only appear once per page, and be used at the start of a transaction.
 
-    {button start}[Start Now](https://gov.uk/random){/button}
+    {button start}[Start now](https://gov.uk/random){/button}
 
 which looks like this:
 
-{button start}[Start Now](https://gov.uk/random){/button}
+{button start}[Start now](https://gov.uk/random){/button}
 
 ###Cross domain tracking button
 
 You can add a Google Analytics [tracking id](https://support.google.com/analytics/answer/7372977?hl=en) which will send page views to another domain, this is used to help services understand the start of their users journeys.
 
     {button start cross-domain-tracking:UA-XXXXXX-Y}
-        [Start Now](https://example.com/external-service/start-now)
+        [Start now](https://example.com/external-service/start-now)
     {/button}
 
 which looks like this:
 
 {button start cross-domain-tracking:UA-XXXXXX-Y}
-  [Start Now](https://example.com/external-service/start-now)
+  [Start now](https://example.com/external-service/start-now)
 {/button}
 
 ##Try it yourself
