@@ -77,6 +77,38 @@
   }
 }
 
+// We use code examples which are not styled that well by default
+.govspeak-guide {
+  .code-snippet + p,
+  pre {
+    overflow-x: auto;
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: $gutter / 2;
+    border: 4px solid $grey-3;
+    padding-top: 2.2em;
+    margin: 0;
+    font-size: 16px;
+
+    &::before {
+      content: 'govspeak';
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding-left: .5em;
+      padding-right: .5em;
+      background: $grey-3;
+    }
+  }
+
+  h2 + pre,
+  h3 + pre {
+    margin-top: $gutter / 2;
+  }
+}
+
 .validation-warning {
   background: red;
   color: #fff;
