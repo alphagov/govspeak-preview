@@ -58,10 +58,9 @@ This is what they look like:
 
 We only use numbered lists for describing steps as part of a process. Do this by adding:
 
-`s1. Add numbers.`
-
-`s2. Check numbers.`
-
+<div class="code-snippet"></div>
+`s1. Add numbers.`  
+`s2. Check numbers.`  
 `s3. Love numbers.`
 
 This example follows the [style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#steps) and looks like:
