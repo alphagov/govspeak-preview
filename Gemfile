@@ -5,7 +5,7 @@ ruby File.read('.ruby-version').chomp
 gem 'rails', '5.1.4'
 gem 'puma'
 gem 'slimmer', '11.1.1'
-gem 'govspeak', '5.2.2'
+gem 'govspeak', '5.3.0'
 gem 'govuk_frontend_toolkit', '7.2.0'
 gem 'rubyzip', '~> 1.2.1'
 gem 'reverse_markdown', '~> 1.0.4'
