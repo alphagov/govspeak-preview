@@ -7,16 +7,22 @@
     {
       filter: 'h1',
       replacement: function (content, node) {
-        var underline = Array(content.length + 1).join('=');
-        return '\n\n' + content + '\n' + underline + '\n\n';
+        // We don't allow h1's in govspeak, because the page already has a h1.
+        return '## ' + content;
       }
     },
 
     {
       filter: 'h2',
       replacement: function (content, node) {
-        var underline = Array(content.length + 1).join('-');
-        return '\n\n' + content + '\n' + underline + '\n\n';
+        return '### ' + content;
+      }
+    },
+
+    {
+      filter: 'h3',
+      replacement: function (content, node) {
+        return '#### ' + content;
       }
     },
 
@@ -52,6 +58,13 @@
       filter: ['em', 'i', 'cite', 'var'],
       replacement: function (content) {
         return '*' + content + '*';
+      }
+    },
+
+    {
+      filter: ['b'],
+      replacement: function (content) {
+        return content;
       }
     },
 
@@ -138,8 +151,13 @@
     // https://stackoverflow.com/questions/2176861/javascript-get-clipboard-data-on-paste-event-cross-browser
     output.addEventListener('paste', function (e) {
       var html = e.clipboardData.getData("text/html");
+
+      console.log(html)
+
       var markdown = convert(html);
+
       console.log(markdown);
+
       e.clipboardData.setData("text/html", markdown);
       e.preventDefault();
       output.insertAtCaret(markdown);
