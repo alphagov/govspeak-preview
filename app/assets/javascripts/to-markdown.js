@@ -158,7 +158,6 @@
 
       console.log(markdown);
 
-      e.clipboardData.setData("text/html", markdown);
       e.preventDefault();
       output.insertAtCaret(markdown);
       output.focus();
