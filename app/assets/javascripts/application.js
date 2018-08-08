@@ -11,3 +11,5 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require_tree .
+//= require to-markdown.js
+//= require clipboard2markdown.js
