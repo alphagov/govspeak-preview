@@ -163,3 +163,10 @@ sa_outcome: |
 
 
   *[FCO]: Foreign and Commonwealth Office
+
+canned_content: |
+  ## [CannedContent:4f3383e4-48a2-4461-a41d-f85ea8b89ba0]
+  [CannedContent:4f3383e4-48a2-4461-a41d-3hfd33dfds122]
+
+  The text above is shared content. You can use the tags anywhere to display info:
+  [CannedContent:4f3383e4-48a2-4461-a41d-3hfd33dfds122]
