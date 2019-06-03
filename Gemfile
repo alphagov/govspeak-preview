@@ -5,7 +5,7 @@ ruby File.read('.ruby-version').chomp
 gem 'rails', '5.1.4'
 gem 'puma'
 gem 'slimmer', '13.0.0'
-gem 'govspeak', '5.4.0'
+gem "govspeak", :git => 'https://github.com/alphagov/govspeak.git', :branch => "canned-content"
 gem 'govuk_frontend_toolkit', '7.2.0'
 gem 'govuk_publishing_components', '9.10'
 gem 'rubyzip', '~> 1.2.1'
