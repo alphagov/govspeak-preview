@@ -73,7 +73,7 @@ Steps need an extra line break after the final step (in other words, 2 full blan
 
 ##Tables
 
-Create tables by separating headings with a `'|'` character. Add a row of hyphens for each column separated by `'|'` character below this. Then use the `'|'` character to separate items in each row:
+Create tables by separating columns with a pipe character (`|`). Add a row of hyphens for each column separated by the '|' character below this. Then use the `|` character to separate items in each row. 
 
     Test type | Weekday | Evening, weekend and bank holiday
     -|-
@@ -87,7 +87,24 @@ Test type | Weekday | Evening, weekend and bank holiday
 -|-
 Theory test | 31 | 31
 Abridged theory | 24 | 24
-Practical test | 62 | 75
+Practical test | 62 | 75 
+
+Use a hash (`#`) character after the pipe if the cell is the row title.
+
+
+    |                                 | Monthly direct debit   | One-off payment  | 
+    | --------------------------------| -----------------------|------------------|
+    |# Two-wheeled vehicle            | £72                    | £60              |
+    |# Three-wheeled vehicle          | £132                   | £120 		      |
+
+
+This is what that looks like on GOV.UK:
+
+|| Monthly direct debit| One-off payment| 
+|--|--|--|
+|# Two-wheeled vehicle | £72 | £60 |
+|# Three-wheeled vehicle | £132 | £120 |
+
 
 ##Links
 
