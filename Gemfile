@@ -8,7 +8,7 @@ gem 'slimmer', '13.0.0'
 gem 'govspeak'
 gem 'govuk_frontend_toolkit', '7.2.0'
 gem 'govuk_publishing_components'
-gem 'rubyzip', '~> 1.2.1'
+gem 'rubyzip', '~> 1.3.0'
 gem 'reverse_markdown', '~> 1.0.5'
 gem 'gds-api-adapters'
 
