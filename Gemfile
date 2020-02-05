@@ -4,7 +4,6 @@ ruby File.read('.ruby-version').chomp
 
 gem 'rails', '5.2.3'
 gem 'puma'
-gem 'slimmer', '13.0.0'
 gem 'govspeak'
 gem 'govuk_frontend_toolkit', '7.2.0'
 gem 'govuk_publishing_components'
