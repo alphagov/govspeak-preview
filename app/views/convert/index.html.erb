@@ -1,24 +1,37 @@
 <div class="govspeak-preview-input">
   <p>
-    Converts Google Docs into <a href="https://github.com/alphagov/govspeak">Govspeak</a> ready for Specialist Publisher.<br/>
+    Converts Google Docs into <a href="https://github.com/alphagov/govspeak" class="govuk-link">Govspeak</a> ready for Specialist Publisher.<br/>
   </p>
 
   <p>
-    To download the file, go to Google Docs and click <%= link_to "File > Download as > Web page (.html, zipped)", image_url("govspeak-preview.gif") %>
+    To download the file, go to Google Docs and click <%= link_to "File > Download as > Web page (.html, zipped)", image_url("govspeak-preview.gif"), class: "govuk-link" %>
   </p>
 
   <%= form_tag({ action: :create }, multipart: true) do %>
     <label for="govspeak_input"></label>
-    <%= file_field_tag "upload[file]" %>
-    <input type="submit" class="submit-button" value="Convert" />
+    <%= render "govuk_publishing_components/components/file_upload", {
+      label: {
+        text: "Upload a file"
+      },
+      name: "upload[file]"
+    } %>
+    <%= render "govuk_publishing_components/components/button", {
+      text: "Convert",
+    } %>
   <% end %>
 </div>
 
 <% if @govspeak_input %>
 <div class="govspeak-preview-input">
   <form>
-    <label for="govspeak_input">Converted Govspeak:</label>
-    <textarea id="govspeak_input" name="govspeak"><%= @govspeak_input %></textarea>
+    <%= render "govuk_publishing_components/components/textarea", {
+      label: {
+        text: "Converted govspeak:"
+      },
+      id: "govspeak_input",
+      name: "govspeak",
+      value: @govspeak_input
+    } %>
   </form>
 </div>
 <% end %>

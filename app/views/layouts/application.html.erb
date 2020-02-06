@@ -8,12 +8,14 @@
 </head>
 <body>
   <div id="wrapper">
-    <ul class="nav">
-      <li><%= link_to_unless current_page?(root_path), "Govspeak Preview", root_path %></li>
-      <li><%= link_to_unless current_page?(guide_index_path), "Govspeak Guide", guide_index_path %></li>
-      <li><%= link_to_unless current_page?(convert_index_path), "Convert Google Doc to Govspeak", convert_index_path %></li>
-    </ul>
-    <%= yield %>
+    <%= render "govuk_publishing_components/components/layout_header", {
+      environment: "example",
+      product_name: "Govspeak Preview",
+      navigation_items: navigation_items
+    } %>
+    <main class="govuk-width-container">
+      <%= yield %>
+    </main>
   </div>
 </body>
 </html>
