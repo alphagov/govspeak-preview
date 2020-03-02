@@ -51,7 +51,7 @@ private
   def strip_google_tracking_links(doc)
     doc.css("a").each do |node|
       href = node.attr("href").to_s
-      next unless href.present?
+      next if href.blank?
 
       query_string = URI.parse(href).query
       actual_url = Rack::Utils.parse_nested_query(query_string)["q"]
