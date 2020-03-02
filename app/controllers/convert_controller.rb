@@ -1,6 +1,5 @@
 class ConvertController < ApplicationController
-  def index
-  end
+  def index; end
 
   def create
     @govspeak_input = GoogleDocsToGovspeak.new(params[:upload][:file]).to_govspeak
