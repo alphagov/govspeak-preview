@@ -2,3 +2,9 @@ inherit_gem:
   rubocop-govuk:
     - config/default.yml
     - config/rails.yml
+
+# The description doesn't tell us to explicitly do anything:
+# "Tagging a string as html safe may be a security risk."
+# So let's ignore it for now.
+Rails/OutputSafety:
+  Enabled: false
