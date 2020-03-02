@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.feature "Previews", type: :feature do
   scenario "user clicks on 'some' styleguide example and sees example govspeak" do
@@ -14,6 +14,6 @@ RSpec.feature "Previews", type: :feature do
 
     click_on "Preview"
 
-    expect(page).to have_content('This is an information callout')
+    expect(page).to have_content("This is an information callout")
   end
 end

@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe GoogleDocsToGovspeak do
   describe "#to_govspeak" do
@@ -7,7 +7,7 @@ RSpec.describe GoogleDocsToGovspeak do
 
       govspeak = GoogleDocsToGovspeak.new(report).to_govspeak
 
-      expect(govspeak).to eql(File.read('spec/services/expected-markdown-sample-assessment.md'))
+      expect(govspeak).to eql(File.read("spec/services/expected-markdown-sample-assessment.md"))
     end
   end
 end
