@@ -21,7 +21,7 @@ group :development, :test do
   gem 'listen'
   gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
-  gem 'govuk-lint'
+  gem 'rubocop-govuk'
 end
 
 group :test do
