@@ -2,25 +2,25 @@ source 'https://rubygems.org'
 
 ruby File.read('.ruby-version').chomp
 
-gem 'rails', '5.2.3'
-gem 'puma'
+gem 'gds-api-adapters'
 gem 'govspeak'
 gem 'govuk_frontend_toolkit', '7.2.0'
 gem 'govuk_publishing_components', '~> 21'
-gem 'rubyzip', '~> 1.3.0'
+gem 'puma'
+gem 'rails', '5.2.3'
 gem 'reverse_markdown', '~> 1.0.5'
-gem 'gds-api-adapters'
+gem 'rubyzip', '~> 1.3.0'
 
 group :assets do
-  gem 'sass-rails', '~> 5.1'
   gem 'coffee-rails'
+  gem 'sass-rails', '~> 5.1'
   gem 'uglifier'
 end
 
 group :development, :test do
+  gem 'capybara'
   gem 'listen'
   gem 'rspec-rails', '~> 3.7'
-  gem 'capybara'
   gem 'rubocop-govuk'
 end
 
