@@ -1,4 +1,3 @@
-#!/usr/bin/env rake
 # Add your own tasks in files placed in lib/tasks ending in .rake,
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
@@ -13,5 +12,6 @@ end
 
 GovspeakPreview::Application.load_tasks
 
-Rake::Task[:default].clear
+# Rspec will clobber the default task
+Rake::Task[:default].clear if Rake::Task.task_defined?(:default)
 task default: %i[rubocop spec]
