@@ -4,8 +4,7 @@ ruby File.read(".ruby-version").chomp
 
 gem "gds-api-adapters"
 gem "govspeak"
-gem "govuk_frontend_toolkit", "7.2.0"
-gem "govuk_publishing_components", "~> 21"
+gem "govuk_publishing_components"
 gem "puma"
 gem "rails", "5.2.3"
 gem "reverse_markdown", "~> 1.0.5"
