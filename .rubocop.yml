@@ -2,13 +2,8 @@ inherit_gem:
   rubocop-govuk:
     - config/default.yml
     - config/rails.yml
+    - config/rspec.yml
 
-Style/ExpandPathArguments:
-  Exclude:
-    - 'spec/rails_helper.rb' # Automatically generated
-
-# The description doesn't tell us to explicitly do anything:
-# "Tagging a string as html safe may be a security risk."
-# So let's ignore it for now.
-Rails/OutputSafety:
-  Enabled: false
+inherit_mode:
+  merge:
+    - Exclude
