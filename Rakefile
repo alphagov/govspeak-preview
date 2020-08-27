@@ -4,4 +4,14 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+begin
+  require 'rubocop/rake_task'
+  RuboCop::RakeTask.new
+rescue LoadError
+  # running in an environment without the rubocop gem enabled
+end
+
 GovspeakPreview::Application.load_tasks
+
+Rake::Task[:default].clear
+task default: %i[rubocop spec]
