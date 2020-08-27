@@ -12,5 +12,6 @@ end
 
 GovspeakPreview::Application.load_tasks
 
-Rake::Task[:default].clear
+# Rspec will clobber the default task
+Rake::Task[:default].clear if Rake::Task.task_defined?(:default)
 task default: %i[rubocop spec]
