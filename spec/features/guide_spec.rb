@@ -7,6 +7,6 @@ RSpec.feature "Govspeak guide", type: :feature do
     expect(page).to have_content("What is govspeak?")
     expect(page).to have_content("UK Parliament")
 
-    expect(page).to have_css(".button.button-start")
+    expect(page).to have_css(".govuk-button.govuk-button--start")
   end
 end
