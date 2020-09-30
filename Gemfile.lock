@@ -292,8 +292,5 @@ DEPENDENCIES
   uglifier
   webmock
 
-RUBY VERSION
-   ruby 2.6.6
-
 BUNDLED WITH
-   1.17.2
+   2.1.4
