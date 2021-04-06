@@ -214,7 +214,7 @@ Always put the longer one first in the list - otherwise PCSOs will pick up only 
 ##Contacts
 
     $C
-    **Financial Conduct Authority**
+    Financial Conduct Authority
     <consumer.queries@fca.org.uk>
     Telephone: 0800 111 6768
     Monday to Friday, 8am to 6pm
@@ -227,13 +227,15 @@ Remember to add a call charges link when there are telephone numbers.
 This creates a contact box, which looks like this:
 
 $C
-**Financial Conduct Authority**  
+Financial Conduct Authority  
 <consumer.queries@fca.org.uk>  
 Telephone: 0800 111 6768  
 Monday to Friday, 8am to 6pm  
 Saturday, 9am to 1pm  
 [Find out about call charges](/call-charges)  
 $C
+
+Do not use bold for the contact team name. This is not accessible because it looks like a heading and can be confusing for users of assistive technology. Use heading Markdown above the contact Markdown instead if you need to draw attention to the information.
 
 ##Addresses
 
@@ -250,6 +252,8 @@ HM Revenue and Customs
 Bradford
 BD98 1YY
 $A
+
+Do not use bold for the address title. This is not accessible because it looks like a heading and can be confusing for users of assistive technology. Use heading Markdown above the address Markdown instead if you need to draw attention to the information.
 
 ##Buttons
 
