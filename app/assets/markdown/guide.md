@@ -73,7 +73,7 @@ Steps need an extra line break after the final step (in other words, 2 full blan
 
 ##Tables
 
-Create tables by separating columns with a pipe character (`|`). Add a row of hyphens for each column separated by the '|' character below this. Then use the `|` character to separate items in each row. 
+Create tables by separating columns with a pipe character (`|`). Add a row of hyphens for each column separated by the `|` character below this. Then use the `|` character to separate items in each row. 
 
     Test type | Weekday | Evening, weekend and bank holiday
     -|-
