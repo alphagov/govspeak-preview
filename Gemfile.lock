@@ -102,12 +102,12 @@ GEM
       nokogumbo (~> 2)
       rinku (~> 2.0)
       sanitize (>= 5.2.1, < 6)
-    govuk_app_config (3.1.1)
+    govuk_app_config (3.2.0)
       logstasher (>= 1.2.2, < 2.2.0)
       sentry-raven (~> 3.1.1)
       statsd-ruby (~> 1.5.0)
       unicorn (>= 5.4, < 5.9)
-    govuk_publishing_components (24.14.1)
+    govuk_publishing_components (24.15.1)
       govuk_app_config
       kramdown
       plek
