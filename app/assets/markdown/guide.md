@@ -128,7 +128,8 @@ which looks like this:
 
 ##Callouts
 
-To draw attention to content, you can use callouts. For example, you can put some text in an 'information callout' to indicate that it's something related that's worth knowing, or doesn't fit the flow of the content. Alternatively, you can use the more severe 'warning callout' to indiciate serious consequences, such as a fine or criminal proceedings.
+To draw attention to content, you can use callouts. For example, you can put some text in an 'information callout' to indicate that it's something related that's worth knowing, or doesn't fit the flow of the content.  
+Only use the more severe 'warning callout' to indiciate serious consequences, such as a fine or criminal proceedings.
 
 ### Information callouts
 
