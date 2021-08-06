@@ -225,6 +225,37 @@ This is what they look like:
 Don't skip heading levels - in other words, don't jump straight to an H3. Don't insert an H1 anywhere.
 
 
+##Links
+
+###Internal links
+
+Use the end of the URL path (so https://www.gov.uk/tax-disc would be /tax-disc). The link text goes in square brackets, and the slug goes in standard brackets, with no spaces in between:
+
+    [Renew your tax disc](/tax-disc).
+
+This looks like:
+
+[Renew your tax disc](/tax-disc).
+
+###External links
+
+For external links, you need to include the full URL with http:// or www:
+
+    [UK Parliament](http://www.parliament.uk).
+
+This looks like:
+
+[UK Parliament](http://www.parliament.uk).
+
+
+###Email links
+
+    <address@example.com>
+
+This looks like:
+
+<address@example.com>
+
 ##Tables
 
 Create tables by separating columns with a pipe character (`|`). Add a row of hyphens for each column separated by the `|` character below this. Then use the `|` character to separate items in each row. 
@@ -258,38 +289,6 @@ This is what that looks like on GOV.UK:
 |--|--|--|
 |# Two-wheeled vehicle | £72 | £60 |
 |# Three-wheeled vehicle | £132 | £120 |
-
-
-##Links
-
-###Internal links
-
-Use the end of the URL path (so https://www.gov.uk/tax-disc would be /tax-disc). The link text goes in square brackets, and the slug goes in standard brackets, with no spaces in between:
-
-    [Renew your tax disc](/tax-disc).
-
-This looks like:
-
-[Renew your tax disc](/tax-disc).
-
-###External links
-
-For external links, you need to include the full URL with http:// or www:
-
-    [UK Parliament](http://www.parliament.uk).
-
-This looks like:
-
-[UK Parliament](http://www.parliament.uk).
-
-
-###Email links
-
-    <address@example.com>
-
-This looks like:
-
-<address@example.com>
 
 
 ##Try it yourself
