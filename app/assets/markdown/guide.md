@@ -47,10 +47,6 @@ This is what it looks like:
 
 **Double asterisks around text** will turn it bold. Use it sparingly.
 
-##Line breaks
-
-To add a line break (a 'soft return', but not a new paragraph), put 2 spaces at the end of a piece of text.
-
 
 ##Bulleted lists
 
@@ -224,6 +220,9 @@ This is what they look like:
 
 Don't skip heading levels - in other words, don't jump straight to an H3. Don't insert an H1 anywhere.
 
+##Line breaks
+
+To add a line break (a 'soft return', but not a new paragraph), put 2 spaces at the end of a piece of text.
 
 ##Links
 
