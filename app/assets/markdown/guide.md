@@ -129,7 +129,7 @@ which looks like this:
 ##Callouts
 
 To draw attention to content, you can use callouts. For example, you can put some text in an 'information callout' to indicate that it's something related that's worth knowing, or doesn't fit the flow of the content.  
-Only use the more severe 'warning callout' to indiciate serious consequences, such as a fine or criminal proceedings.
+Only use the more severe 'warning callout' to indicate serious consequences, such as a fine or criminal proceedings.
 
 ### Information callouts
 
@@ -213,14 +213,14 @@ You can create heading levels using the hash character (#). The number of hashes
 
 The top-level headings on a page are automatically formatted as H1, so you don't need to use this.
 
-    ##This is an H2 subheading
-    ###This is an H3 subheading
+    ##This is an H2 subheading example
+    ###This is an H3 subheading example
 
 This is what they look like:
 
-##This is an H2 subheading
+##This is an H2 subheading example
 
-###This is an H3 subheading
+###This is an H3 subheading example
 
 Don't skip heading levels - in other words, don't jump straight to an H3. Don't insert an H1 anywhere.
 
@@ -283,7 +283,6 @@ This looks like:
 [UK Parliament](http://www.parliament.uk).
 
 
-
 ###Email links
 
     <address@example.com>
@@ -293,20 +292,19 @@ This looks like:
 <address@example.com>
 
 
+##Try it yourself
 
-##Answer summaries
+Use the [Govspeak preview](/) to try using govspeak.
+
+##Deprecated styles
+
+###Answer summaries
 
 We no longer add this markdown to any new content. (You may still come across it in the 'quick answer' format.)
 
     $! This is an answer summary. $!
 
 If you see this markdown, you can delete it.
-
-
-
-##Try it yourself
-
-Use the [preview](/) to try using govspeak.
 
 *[PCSOs]: Police Community Support Officers  
 *[PCSO]: Police Community Support Officer
