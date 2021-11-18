@@ -4,7 +4,7 @@ RSpec.feature "Govspeak guide", type: :feature do
   scenario "Govspeak guide renders markdown" do
     visit "/guide"
 
-    expect(page).to have_content("What is govspeak?")
+    expect(page).to have_content("What is Govspeak?")
     expect(page).to have_content("UK Parliament")
 
     expect(page).to have_css(".govuk-button.govuk-button--start")
