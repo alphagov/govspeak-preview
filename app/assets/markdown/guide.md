@@ -1,14 +1,18 @@
-##What is govspeak?
+##What is Govspeak?
 
-Govspeak is a simplified 'markup' language based on [Markdown](http://daringfireball.net/projects/markdown/syntax). It's designed to be as easy-to-read and easy-to-write as possible, using simple punctuation instead of complicated tags and code.
+[Govspeak](https://github.com/alphagov/govspeak) is a simplified version of [Markdown](http://daringfireball.net/projects/markdown/syntax) used on [GOV.UK](https://www.gov.uk/). It's designed to be as easy-to-read and easy-to-write as possible, using simple punctuation instead of complicated tags and code.
 
-Govspeak was developed by the [Government Digital Service](digital.cabinetoffice.gov.uk) with some extra features that we use to format content on [GOV.UK.](https://www.gov.uk)
+Govspeak was developed by the [Government Digital Service]() with some extra features that we use to format content on [GOV.UK](https://www.gov.uk/).
+
+This guide is for Mainstream publisher Govspeak. View the [Govspeak guide for Whitehall publisher](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown).
+
+Reason: Consistent capitalisation of Govspeak. Also, it makes sense to link to the github repository from the guide page rather than the 'preview' page. As we are sharing this with Whitehall publishers as a stopgap - maybe better to just direct them to the Whitehall markdown guidance so we don’t have to duplicate content?
 
 ##Acronyms
 
 List these in the following format at the end of the document and all occurrences will be marked up as acronyms:
 
-    *[FCO]: Foreign and Commonwealth Office
+    *[FCDO]: Foreign, Commonwealth and Development Office
 
 This means the full text will appear when users hover over the acronym wherever it occurs on the page.
 
@@ -46,7 +50,6 @@ Do not use bold for the address title. This is not accessible because it looks l
 This is what it looks like:
 
 **Double asterisks around text** will turn it bold. Use it sparingly.
-
 
 ##Bulleted lists
 
@@ -145,15 +148,15 @@ This looks like:
 
 ### Example callout
 
+Do not bold 'Example'. Use the appropriate heading Markdown above the example markdown if you need to draw attention to the information
+
     $E
-    **Example** 
     Open the pod bay doors.
     $E
 
 This looks like:
 
 $E
-**Example** 
 Open the pod bay doors.
 $E
 
@@ -200,8 +203,6 @@ $D
 When linking to PDFs, don't put the trailing slash '/' at the end, as the link won't work.
 
 This is only used for external download files. If the file is hosted on Whitehall, it should link to the splash page as an internal link.
-
-
 
 ##Headings
 
@@ -257,42 +258,43 @@ This looks like:
 
 ##Tables
 
-Create tables by separating columns with a pipe character (`|`). Add a row of hyphens for each column separated by the `|` character below this. Then use the `|` character to separate items in each row. 
+Create tables by separating columns with a pipe character (`|`).
+
+Add a row of hyphens for each column separated by the `|` character below this.
+
+Then use the `|` character to separate items in each row. 
+
+Use a hash (`#`) character after the pipe if the cell is the row title or the table has more than 2 columns
 
     Test type | Weekday | Evening, weekend and bank holiday
     -|-
-    Theory test | 31 | 31
-    Abridged theory | 24 | 24
-    Practical test | 62 | 75
+    # Theory test | 31 | 31
+    # Abridged theory | 24 | 24
+    # Practical test | 62 | 75
 
 This is what that table looks like on GOV.UK:
 
 Test type | Weekday | Evening, weekend and bank holiday
 -|-
-Theory test | 31 | 31
-Abridged theory | 24 | 24
-Practical test | 62 | 75 
+# Theory test | 31 | 31
+# Abridged theory | 24 | 24
+# Practical test | 62 | 75
 
-Use a hash (`#`) character after the pipe if the cell is the row title.
+Tables with 2 columns do not usually need headings in the first column.
 
+This is because there is less to scroll so the content will be clear enough without headings to explain the content.
 
-    |                                 | Monthly direct debit   | One-off payment  | 
-    | --------------------------------| -----------------------|------------------|
-    |# Two-wheeled vehicle            | £72                    | £60              |
-    |# Three-wheeled vehicle          | £132                   | £120 		      |
+    | Item | Cost |
+    |-----|-----|
+    | Bread | 75p |
+    | Milk | 99p |
 
+This is what that table looks like on GOV.UK:
 
-This is what that looks like on GOV.UK:
-
-|| Monthly direct debit| One-off payment| 
-|--|--|--|
-|# Two-wheeled vehicle | £72 | £60 |
-|# Three-wheeled vehicle | £132 | £120 |
-
-
-##Try it yourself
-
-Use the [Govspeak preview](/) to try using govspeak.
+| Item | Cost |
+|-----|-----|
+| Bread | 75p |
+| Milk | 99p |
 
 ##Deprecated styles
 

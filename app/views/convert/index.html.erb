@@ -1,9 +1,20 @@
 <div class="govspeak-preview-input">
-  <p>
-    Converts Google Docs into <a href="https://github.com/alphagov/govspeak" class="govuk-link">Govspeak</a> ready for Specialist Publisher.<br/>
+  <%= render "govuk_publishing_components/components/heading", {
+    text: "Convert Google doc to Govspeak",
+    font_size: "l",
+    heading_level: 1,
+    margin_bottom: 4
+  } %>
+
+  <p class="govuk-body">
+    Converts Google Docs into basic <a href="https://github.com/alphagov/govspeak" rel="nofollow" class="govuk-link">Govspeak</a>.
   </p>
 
   <p>
+    You'll have to <a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown" rel="nofollow" class="govuk-link">convert tables and write additional Govspeak markdown</a> separately.
+  </p>
+
+  <p class="govuk-body">
     To download the file, go to Google Docs and click <%= link_to "File > Download as > Web page (.html, zipped)", image_url("govspeak-preview.gif"), class: "govuk-link" %>
   </p>
 

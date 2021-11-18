@@ -56,11 +56,10 @@ body {
     margin: 0;
 
     &::before {
-      content: "govspeak";
-      position: absolute;
-      left: 0;
-      top: 0;
-      padding-left: 15px;
+      content: "Govspeak";
+      display: block;
+      font-family: monospace;
+      padding: 0 0 15px;
       background: govuk-colour("light-grey");
     }
   }
