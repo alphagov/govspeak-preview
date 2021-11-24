@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Govspeak Preview", type: :feature do
+RSpec.feature "Govspeak preview", type: :feature do
   scenario "Add Govspeak for one title" do
     visit "/"
 

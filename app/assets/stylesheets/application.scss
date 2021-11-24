@@ -45,7 +45,7 @@ body {
   .code-snippet + p,
   pre {
     @include govuk-font(16);
-    overflow-x: auto;
+    overflow: auto;
     max-width: 100%;
     position: relative;
     display: inline-block;
@@ -55,11 +55,13 @@ body {
     padding-top: 2.2em;
     margin: 0;
 
-    &::before {
-      content: "Govspeak";
-      display: block;
-      font-family: monospace;
-      padding: 0 0 15px;
+  &::before {
+      content: 'govspeak';
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding-left: .5em;
+      padding-right: .5em;
       background: govuk-colour("light-grey");
     }
   }

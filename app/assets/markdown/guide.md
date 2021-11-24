@@ -6,8 +6,6 @@ Govspeak was developed by the [Government Digital Service]() with some extra fea
 
 This guide is for Mainstream publisher Govspeak. View the [Govspeak guide for Whitehall publisher](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown).
 
-Reason: Consistent capitalisation of Govspeak. Also, it makes sense to link to the github repository from the guide page rather than the 'preview' page. As we are sharing this with Whitehall publishers as a stopgap - maybe better to just direct them to the Whitehall markdown guidance so we don’t have to duplicate content?
-
 ##Acronyms
 
 List these in the following format at the end of the document and all occurrences will be marked up as acronyms:
@@ -16,13 +14,9 @@ List these in the following format at the end of the document and all occurrence
 
 This means the full text will appear when users hover over the acronym wherever it occurs on the page.
 
-###Example of acronym use
+If you use the acronym in singular and plural in your content, always put the plural one first in the list.
 
-Example: PCSO and PCSOs are both in a piece of content.
-
-Always put the longer one first in the list - otherwise PCSOs will pick up only the singular 'Police Community Support Officer'.
-
-    *[PCSOs]: Police Community Support Officers  
+    *[PCSOs]: Police Community Support Officers
     *[PCSO]: Police Community Support Officer
     
 ##Addresses
@@ -88,7 +82,7 @@ s1. Add numbers.
 s2. Check numbers.
 s3. Love numbers.
 
-Steps need an extra line break after the final step (in other words, 2 full blank lines). If you don't do this, other markdown directly after them won't work. If you have a subheading after numbered steps, add a line break after this.
+Steps need an extra line break after the final step (in other words, 2 full blank lines). If you don't do this, other Markdown directly after them won't work. If you have a subheading after numbered steps, add a line break after this.
 
 ##Buttons
 
@@ -148,7 +142,7 @@ This looks like:
 
 ### Example callout
 
-Do not bold 'Example'. Use the appropriate heading Markdown above the example markdown if you need to draw attention to the information
+Use the appropriate heading Markdown above the example Markdown if you need to draw attention to the information.
 
     $E
     Open the pod bay doors.
@@ -258,13 +252,7 @@ This looks like:
 
 ##Tables
 
-Create tables by separating columns with a pipe character (`|`).
-
-Add a row of hyphens for each column separated by the `|` character below this.
-
-Then use the `|` character to separate items in each row. 
-
-Use a hash (`#`) character after the pipe if the cell is the row title or the table has more than 2 columns
+Write your title row using the pipe character (`|`) to separate the columns. Below this, add a row of hyphens for each column separated by the `|` character. Use the `|` character to separate items in each row. Use a hash (`#`) character before the row title if the table has more than 2 columns.
 
     Test type | Weekday | Evening, weekend and bank holiday
     -|-
@@ -280,9 +268,7 @@ Test type | Weekday | Evening, weekend and bank holiday
 # Abridged theory | 24 | 24
 # Practical test | 62 | 75
 
-Tables with 2 columns do not usually need headings in the first column.
-
-This is because there is less to scroll so the content will be clear enough without headings to explain the content.
+Tables with 2 columns do not usually need headings in the first column. This is because there is less to scroll so the content will be clear enough without headings to explain the content.
 
     | Item | Cost |
     |-----|-----|
@@ -300,11 +286,8 @@ This is what that table looks like on GOV.UK:
 
 ###Answer summaries
 
-We no longer add this markdown to any new content. (You may still come across it in the 'quick answer' format.)
+We no longer add this Markdown to any new content. (You may still come across it in the 'quick answer' format.)
 
     $! This is an answer summary. $!
 
-If you see this markdown, you can delete it.
-
-*[PCSOs]: Police Community Support Officers  
-*[PCSO]: Police Community Support Officer
+If you see this Markdown, you can delete it.

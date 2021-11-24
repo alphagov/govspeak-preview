@@ -1,6 +1,6 @@
 <div class="govspeak-preview-input">
   <%= render "govuk_publishing_components/components/heading", {
-    text: "Govspeak Preview",
+    text: "Govspeak preview",
     font_size: "l",
     heading_level: 1,
     margin_bottom: 4
@@ -10,9 +10,8 @@
     <a href="https://govspeak-preview.herokuapp.com/guide" rel="nofollow" class="govuk-link">Govspeak is a simplified version of Markdown used on GOV.UK</a>.
   </p>
 
-  <p class="govuk-body">Enter Govspeak or text from an original digital document (not PDF) to preview how your content will appear on GOV.UK.</p>
-  <p class="govuk-body">You can also paste formatted text from an email, website or any word document (but not a pdf) to convert it into Govspeak:</p>
-
+  <p class="govuk-body">Enter Govspeak to preview how your content will appear on GOV.UK.</p>
+  <p class="govuk-body">You can also paste formatted text from an original digital document like an email, website or word document (but not a PDF) to convert it into Govspeak:</p>
   <ul class="govuk-list govuk-list--bullet">
     <li>headings</li>
     <li>bullets</li>
@@ -28,7 +27,7 @@
   <form method="post" action="/preview/">
     <%= render "govuk_publishing_components/components/textarea", {
       label: {
-        text: "Paste rich text content into the form below:"
+        text: "Enter Govspeak or paste text to preview:"
       },
       id: "govspeak_input",
       name: "govspeak",
