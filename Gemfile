@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "6.0.3.2"
+gem "rails", "6.1.4.4"
 
 gem "govspeak"
 gem "govuk_publishing_components"
