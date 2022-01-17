@@ -2,9 +2,9 @@ module ApplicationHelper
   def navigation_items
     items = []
 
-    items << { text: "Govspeak preview", href: "/", active: is_current?("/") }
+    items << { text: "Govspeak converter", href: "/", active: is_current?("/") }
     items << { text: "Govspeak guide", href: "/guide", active: is_current?("/guide") }
-    items << { text: "Convert Google Doc to Govspeak", href: "/convert", active: is_current?("/convert") }
+    items << { text: "Convert Google Docs to Govspeak", href: "/convert", active: is_current?("/convert") }
 
     items
   end

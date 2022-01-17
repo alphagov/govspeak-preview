@@ -2,7 +2,7 @@
 
 [Govspeak](https://github.com/alphagov/govspeak) is a simplified version of [Markdown](http://daringfireball.net/projects/markdown/syntax) used on [GOV.UK](https://www.gov.uk/). It's designed to be as easy-to-read and easy-to-write as possible, using simple punctuation instead of complicated tags and code.
 
-Govspeak was developed by the [Government Digital Service]() with some extra features that we use to format content on [GOV.UK](https://www.gov.uk/).
+Govspeak was developed by the [Government Digital Service](https://gds.blog.gov.uk) with some extra features that we use to format content on [GOV.UK](https://www.gov.uk/).
 
 This guide is for Mainstream publisher Govspeak. View the [Govspeak guide for Whitehall publisher](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown).
 
@@ -121,7 +121,8 @@ which looks like this:
 
 ##Callouts
 
-To draw attention to content, you can use callouts. For example, you can put some text in an 'information callout' to indicate that it's something related that's worth knowing, or doesn't fit the flow of the content.  
+To draw attention to content, you can use callouts. For example, you can put some text in an 'information callout' to indicate that it's something related that's worth knowing, or does not fit the flow of the content.
+
 Only use the more severe 'warning callout' to indicate serious consequences, such as a fine or criminal proceedings.
 
 ### Information callouts
@@ -282,7 +283,7 @@ This is what that table looks like on GOV.UK:
 | Bread | 75p |
 | Milk | 99p |
 
-##Deprecated styles
+##Markdown we no longer use
 
 ###Answer summaries
 

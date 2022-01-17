@@ -1,34 +1,47 @@
 <div class="govspeak-preview-input">
   <%= render "govuk_publishing_components/components/heading", {
-    text: "Convert Google Doc to Govspeak",
+    text: "Convert Google Docs to Govspeak and preview",
     font_size: "l",
     heading_level: 1,
     margin_bottom: 4
   } %>
 
-  <p class="govuk-body">
-    Converts Google Docs into basic <a href="https://github.com/alphagov/govspeak" rel="nofollow" class="govuk-link">Govspeak</a>.
-  </p>
-
-  <p>
-    You'll have to <a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown" rel="nofollow" class="govuk-link">convert tables and write additional Govspeak Markdown</a> separately.
-  </p>
+  <% if !@govspeak_output.blank? %>
+    <%= render "govuk_publishing_components/components/inset_text", {
+      text: "Conversion and preview updated"
+    } %>
+  <% end %>
 
   <p class="govuk-body">
-    To download the file, go to Google Docs and click <%= link_to "File > Download as > Web page (.html, zipped)", image_url("govspeak-preview.gif"), class: "govuk-link" %>
+    This converts Google Docs into basic Govspeak Markdown and previews what it will look like on GOV.UK. You'll have to <a href="/guide" class="govuk-link">write additional Govspeak</a> separately.
   </p>
+
+  <p class="govuk-body">To convert a Google Doc into Govspeak:</p>
+
+  <%= render "govuk_publishing_components/components/list", {
+    list_type: "number",
+    visible_counters: true,
+    items: [
+      "Remove images from the Google Doc.",
+      "Select 'File' in the Google Doc.",
+      "Download the file as 'Web page (.html, zipped)'.",
+      "On this page, select 'Choose file' to upload the zipped file.",
+      "Select 'Convert'."
+    ]
+  } %>
 
   <%= form_tag({ action: :create }, multipart: true) do %>
-    <label for="govspeak_input"></label>
     <%= render "govuk_publishing_components/components/file_upload", {
-      label: {
-        text: "Upload a file"
-      },
       name: "upload[file]"
     } %>
+
     <%= render "govuk_publishing_components/components/button", {
       text: "Convert",
     } %>
+
+    <% if !@govspeak_output.blank? %>
+      <p class="govuk-!-margin-bottom-0">Conversion and preview updated below</p>
+    <% end %>
   <% end %>
 </div>
 
@@ -37,7 +50,7 @@
   <form>
     <%= render "govuk_publishing_components/components/textarea", {
       label: {
-        text: "Converted govspeak:"
+        text: "Converted into Govspeak"
       },
       id: "govspeak_input",
       name: "govspeak",
@@ -47,12 +60,19 @@
 </div>
 <% end %>
 
-<div class="govspeak-preview-output">
+<div class="govspeak-preview-output" data-ouptput-is-nil="<%= @govspeak_output.nil? %>">
   <% if (@govspeak_doc && !@govspeak_doc.valid?) %>
     <p class="validation-warning">This govspeak doesn't validate and may not be accepted by publishing tools</p>
   <% end %>
 
-  <article>
-    <%= render 'govuk_publishing_components/components/govspeak', content: raw(@govspeak_output) %>
-  </article>
+  <% if !@govspeak_doc.nil? %>
+    <%= render "govuk_publishing_components/components/heading", {
+      text: "How this will look on GOV.UK",
+      font_size: "m",
+      heading_level: 2,
+      margin_bottom: 4
+    } %>
+  <% end %>
+
+  <%= render 'govuk_publishing_components/components/govspeak', content: raw(@govspeak_output) %>
 </div>

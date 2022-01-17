@@ -4,7 +4,7 @@ RSpec.feature "Converting to Govspeak", type: :feature do
   scenario "User converts a Google Doc to Govspeak" do
     visit "/"
 
-    click_on "Convert Google Doc to Govspeak"
+    click_on "Convert Google Docs to Govspeak"
 
     attach_file "upload[file]", "./spec/support/fixtures/Sample Assessment Report.zip"
 

@@ -1,17 +1,20 @@
 <div class="govspeak-preview-input">
   <%= render "govuk_publishing_components/components/heading", {
-    text: "Govspeak preview",
+    text: "Govspeak converter and preview",
     font_size: "l",
     heading_level: 1,
     margin_bottom: 4
   } %>
 
-  <p class="govuk-body">
-    <a href="https://govspeak-preview.herokuapp.com/guide" rel="nofollow" class="govuk-link">Govspeak is a simplified version of Markdown used on GOV.UK</a>.
-  </p>
+  <% if !@govspeak_output.blank? %>
+    <%= render "govuk_publishing_components/components/inset_text", {
+      text: "Preview updated"
+    } %>
+  <% end %>
 
-  <p class="govuk-body">Enter Govspeak to preview how your content will appear on GOV.UK.</p>
-  <p class="govuk-body">You can also paste formatted text from an original digital document like an email, website or word document (but not a PDF) to convert it into Govspeak:</p>
+  <p class="govuk-body">Govspeak is a simplified version of Markdown used on GOV.UK.</p>
+  <p class="govuk-body">Paste formatted text from an original digital document like an email, website or word document here to convert it into basic Govspeak. This will convert:</p>
+
   <ul class="govuk-list govuk-list--bullet">
     <li>headings</li>
     <li>bullets</li>
@@ -20,31 +23,41 @@
     <li>email addresses</li>
   </ul>
 
-  <p class="govuk-body">
-    For tables, use the <a href="https://www.tablesgenerator.com/markdown_tables#" rel="nofollow" class="govuk-link">tables generator</a>.
-  </p>
+  <p class="govuk-body">You'll have to <a href="/guide" class="govuk-link">write additional Govspeak</a> separately. You cannot paste from a PDF</a>.</p>
 
   <form method="post" action="/preview/">
     <%= render "govuk_publishing_components/components/textarea", {
       label: {
-        text: "Enter Govspeak or paste text to preview:"
+        text: "Paste formatted text or Govspeak to preview what it will look like on GOV.UK:"
       },
       id: "govspeak_input",
       name: "govspeak",
       value: @govspeak_input
     } %>
+
     <%= render "govuk_publishing_components/components/button", {
       text: "Preview",
     } %>
+
+    <% if !@govspeak_output.blank? %>
+      <p class="govuk-!-margin-bottom-0">Preview updated below</p>
+    <% end %>
   </form>
 </div>
 
-<div class="govspeak-preview-output">
+<div class="govspeak-preview-output" data-ouptput-is-nil="<%= @govspeak_output.nil? %>">
   <% if (@govspeak_doc && !@govspeak_doc.valid?) %>
     <p class="validation-warning">This govspeak doesn't validate and may not be accepted by publishing tools</p>
   <% end %>
 
-  <article>
-    <%= render 'govuk_publishing_components/components/govspeak', content: raw(@govspeak_output) %>
-  </article>
+  <% if !@govspeak_output.blank? %>
+    <%= render "govuk_publishing_components/components/heading", {
+      text: "How this will look on GOV.UK",
+      font_size: "m",
+      heading_level: 2,
+      margin_bottom: 4
+    } %>
+  <% end %>
+
+  <%= render 'govuk_publishing_components/components/govspeak', content: raw(@govspeak_output) %>
 </div>

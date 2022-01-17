@@ -5,3 +5,4 @@
 
 //= require paste-html-to-markdown
 //= require html-govspeak
+//= require scroll-into-view
