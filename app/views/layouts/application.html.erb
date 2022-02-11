@@ -6,13 +6,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render "govuk_publishing_components/components/skip_link", {
+  } %>
   <div id="wrapper">
     <%= render "govuk_publishing_components/components/layout_header", {
       environment: "beta",
       product_name: "Govspeak converter",
       navigation_items: navigation_items
     } %>
-    <main class="govuk-width-container">
+    <main id="main-content" class="govuk-width-container">
       <%= yield %>
     </main>
   </div>
