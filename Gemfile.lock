@@ -79,7 +79,7 @@ GEM
       faraday-net_http (~> 2.0)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.0.1)
-    ffi (1.13.1)
+    ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
     govspeak (6.8.2)
@@ -305,9 +305,6 @@ DEPENDENCIES
   sassc-rails
   uglifier
   webmock
-
-RUBY VERSION
-   ruby 2.7.5
 
 BUNDLED WITH
    2.1.4
