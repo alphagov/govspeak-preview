@@ -31,5 +31,10 @@ module GovspeakPreview
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Using a sass css compressor causes a scss file to be processed twice (once
+    # to build, once to compress) which breaks the usage of "unquote" to use
+    # CSS that has same function names as SCSS such as max
+    config.assets.css_compressor = nil
   end
 end
