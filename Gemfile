@@ -8,6 +8,7 @@ gem "puma"
 gem "reverse_markdown"
 gem "rubyzip"
 gem "sassc-rails"
+gem "sprockets-rails"
 gem "uglifier"
 
 group :development, :test do
