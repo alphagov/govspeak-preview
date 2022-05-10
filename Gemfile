@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "6.1.5.1"
+gem "rails", "7.0.2"
 
 gem "govspeak"
 gem "govuk_publishing_components"
@@ -8,6 +8,7 @@ gem "puma"
 gem "reverse_markdown"
 gem "rubyzip"
 gem "sassc-rails"
+gem "sprockets-rails"
 gem "uglifier"
 
 group :development, :test do
