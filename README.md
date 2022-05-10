@@ -16,7 +16,7 @@ The guide also says when to use the various types of Govspeak, such as the diffe
 
 ## Deployment
 
-It's hosted on [Heroku](http://govspeak-preview.herokuapp.com/), and automatically deployed when `master` changes.
+It's hosted on [Heroku](http://govspeak-preview.herokuapp.com/), and automatically deployed when `main` changes.
 
 ## Running locally
 
