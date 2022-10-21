@@ -99,11 +99,11 @@ GEM
       nokogiri (~> 1.12)
       rinku (~> 2.0)
       sanitize (~> 6)
-    govuk_app_config (4.9.0)
+    govuk_app_config (4.10.0)
       logstasher (~> 2.1)
       plek (~> 4)
       prometheus_exporter (~> 2.0)
-      puma (~> 5.6)
+      puma (>= 5.6, < 7.0)
       rack-proxy (~> 0.7)
       sentry-rails (~> 5.3)
       sentry-ruby (~> 5.3)
@@ -112,7 +112,7 @@ GEM
     govuk_personalisation (0.12.0)
       plek (>= 1.9.0)
       rails (>= 6, < 8)
-    govuk_publishing_components (31.1.2)
+    govuk_publishing_components (31.2.0)
       govuk_app_config
       govuk_personalisation (>= 0.7.0)
       kramdown
@@ -154,7 +154,7 @@ GEM
     net-smtp (0.3.2)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.8)
+    nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.22.1)
