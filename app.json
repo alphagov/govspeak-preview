@@ -3,9 +3,6 @@
   "scripts": {
   },
   "env": {
-    "HEROKU_POSTGRESQL_TEAL_URL": {
-      "required": true
-    },
     "LANG": {
       "required": true
     },
@@ -20,9 +17,6 @@
   },
   "formation": {
   },
-  "addons": [
-    "heroku-postgresql"
-  ],
   "buildpacks": [
     {
       "url": "heroku/ruby"
