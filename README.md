@@ -23,3 +23,7 @@ It's hosted on [Heroku](http://govspeak-preview.herokuapp.com/), and automatical
 ```
 ./startup.sh --live
 ```
+
+## Licence
+
+[MIT License](LICENCE)
