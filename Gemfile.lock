@@ -1,3 +1,16 @@
+PATH
+  remote: ../govuk_publishing_components
+  specs:
+    govuk_publishing_components (35.18.0)
+      govuk_app_config
+      govuk_personalisation (>= 0.7.0)
+      kramdown
+      plek
+      rails (>= 6)
+      rouge
+      sprockets (>= 3)
+      sprockets-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -83,6 +96,9 @@ GEM
     crack (0.4.5)
       rexml
     crass (1.0.6)
+    dartsass-rails (0.5.0)
+      railties (>= 6.0.0)
+      sass-embedded (~> 1.63)
     date (3.3.3)
     diff-lcs (1.5.0)
     erubi (1.12.0)
@@ -121,14 +137,6 @@ GEM
     govuk_personalisation (0.15.0)
       plek (>= 1.9.0)
       rails (>= 6, < 8)
-    govuk_publishing_components (35.18.0)
-      govuk_app_config
-      govuk_personalisation (>= 0.7.0)
-      kramdown
-      plek
-      rails (>= 6)
-      rouge
-      sprockets (>= 3)
     hashdiff (1.0.1)
     htmlentities (4.3.4)
     i18n (1.14.1)
@@ -483,14 +491,9 @@ GEM
     sanitize (6.0.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
+    sass-embedded (1.69.1)
+      google-protobuf (~> 3.23)
+      rake (>= 13.0.0)
     sentry-rails (5.11.0)
       railties (>= 5.0)
       sentry-ruby (~> 5.11.0)
@@ -505,7 +508,6 @@ GEM
       sprockets (>= 3.0.0)
     statsd-ruby (1.5.0)
     thor (1.2.2)
-    tilt (2.0.10)
     timeout (0.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -532,8 +534,9 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  dartsass-rails
   govspeak
-  govuk_publishing_components
+  govuk_publishing_components!
   listen
   puma
   rails (= 7.0.8)
@@ -541,10 +544,12 @@ DEPENDENCIES
   rspec-rails
   rubocop-govuk
   rubyzip
-  sassc-rails
   sprockets-rails
   uglifier
   webmock
+
+RUBY VERSION
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.3.22
