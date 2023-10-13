@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby File.read(".ruby-version")
 
-gem "rails", "7.1.0"
+gem "rails", "7.1.1"
 
 gem "govspeak"
 gem "govuk_publishing_components"
