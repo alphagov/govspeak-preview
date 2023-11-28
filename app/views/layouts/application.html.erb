@@ -16,6 +16,8 @@
     } %>
     <main id="main-content" class="govuk-width-container">
       <%= yield %>
+
+      <p class="govuk-body">Govspeak version <%= Gem.loaded_specs["govspeak"].version.to_s %></p>
     </main>
   </div>
   <%= javascript_include_tag "application" %>
