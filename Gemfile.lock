@@ -79,7 +79,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     base64 (0.2.0)
-    bigdecimal (3.1.5)
+    bigdecimal (3.1.6)
     builder (3.2.4)
     capybara (3.39.2)
       addressable
@@ -135,7 +135,7 @@ GEM
     govuk_personalisation (0.15.0)
       plek (>= 1.9.0)
       rails (>= 6, < 8)
-    govuk_publishing_components (37.2.2)
+    govuk_publishing_components (37.2.3)
       govuk_app_config
       govuk_personalisation (>= 0.7.0)
       kramdown
@@ -148,7 +148,7 @@ GEM
     htmlentities (4.3.4)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    io-console (0.7.1)
+    io-console (0.7.2)
     irb (1.11.1)
       rdoc
       reline (>= 0.4.2)
@@ -174,7 +174,7 @@ GEM
     matrix (0.4.2)
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
-    minitest (5.21.1)
+    minitest (5.21.2)
     mutex_m (0.2.0)
     net-imap (0.4.9.1)
       date
