@@ -79,7 +79,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     base64 (0.2.0)
-    bigdecimal (3.1.7)
+    bigdecimal (3.1.8)
     builder (3.2.4)
     capybara (3.40.0)
       addressable
@@ -135,7 +135,7 @@ GEM
     govuk_personalisation (0.16.0)
       plek (>= 1.9.0)
       rails (>= 6, < 8)
-    govuk_publishing_components (38.1.1)
+    govuk_publishing_components (38.2.0)
       govuk_app_config
       govuk_personalisation (>= 0.7.0)
       kramdown
@@ -146,11 +146,11 @@ GEM
       sprockets-rails
     hashdiff (1.1.0)
     htmlentities (4.3.4)
-    i18n (1.14.4)
+    i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
-    irb (1.12.0)
-      rdoc
+    irb (1.13.1)
+      rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.7.1)
     kramdown (2.4.0)
@@ -185,7 +185,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.1)
+    nio4r (2.7.2)
     nokogiri (1.16.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -458,9 +458,9 @@ GEM
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
     regexp_parser (2.9.0)
-    reline (0.5.4)
+    reline (0.5.5)
       io-console (~> 0.5)
-    request_store (1.6.0)
+    request_store (1.7.0)
       rack (>= 1.4)
     reverse_markdown (2.1.1)
       nokogiri
