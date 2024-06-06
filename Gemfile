@@ -14,6 +14,7 @@ gem "uglifier"
 
 group :development, :test do
   gem "capybara"
+  gem "govuk_test"
   gem "listen"
   gem "rspec-rails"
   gem "rubocop-govuk"
