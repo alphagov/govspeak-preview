@@ -10,7 +10,7 @@ gem "reverse_markdown"
 gem "rubyzip"
 gem "sassc-rails"
 gem "sprockets-rails"
-gem "uglifier"
+gem "terser"
 
 group :development, :test do
   gem "capybara"
