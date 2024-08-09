@@ -3,12 +3,12 @@ ruby File.read(".ruby-version")
 
 gem "rails", "7.1.3.4"
 
+gem "dartsass-rails"
 gem "govspeak"
 gem "govuk_publishing_components"
 gem "puma"
 gem "reverse_markdown"
 gem "rubyzip"
-gem "sassc-rails"
 gem "sprockets-rails"
 gem "terser"
 
