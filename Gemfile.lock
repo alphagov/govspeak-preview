@@ -92,7 +92,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    concurrent-ruby (1.3.3)
+    concurrent-ruby (1.3.4)
     connection_pool (2.4.1)
     crack (1.0.0)
       bigdecimal
@@ -148,7 +148,7 @@ GEM
     govuk_personalisation (0.16.0)
       plek (>= 1.9.0)
       rails (>= 6, < 8)
-    govuk_publishing_components (41.1.0)
+    govuk_publishing_components (41.1.1)
       govuk_app_config
       govuk_personalisation (>= 0.7.0)
       kramdown
@@ -479,7 +479,7 @@ GEM
       rack (>= 1.4)
     reverse_markdown (2.1.1)
       nokogiri
-    rexml (3.3.4)
+    rexml (3.3.5)
       strscan
     rinku (2.0.6)
     rouge (4.3.0)
