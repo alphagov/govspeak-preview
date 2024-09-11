@@ -14,5 +14,8 @@
 /log/*.log
 /tmp
 
+# Ignore compiled Rails assets
+/public/assets
+
 /app/assets/builds/*
 !/app/assets/builds/.keep
