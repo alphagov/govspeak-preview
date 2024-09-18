@@ -1,0 +1,7 @@
+{
+  "name": "govspeak-preview",
+  "description": "A small rails app for previewing the GOV.UK Markdown variant Govspeak",
+  "private": true,
+  "author": "Government Digital Service",
+  "license": "MIT"
+}
