@@ -6,6 +6,5 @@
   "license": "MIT",
   "dependencies": {
     "govspeak-visual-editor": "^3.0.0"
-  },
-  "packageManager": "yarn@4.2.2"
+  }
 }
