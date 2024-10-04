@@ -30,5 +30,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+      - uses: alphagov/govuk-infrastructure/.github/actions/setup-node@main
       - run: bundle exec rails assets:precompile
       - run: bundle exec rake

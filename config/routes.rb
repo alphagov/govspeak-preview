@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :preview
   resources :convert, only: %w[index create]
   resources :guide
+  resources :editor, only: %w[index]
   root to: "preview#new"
 end

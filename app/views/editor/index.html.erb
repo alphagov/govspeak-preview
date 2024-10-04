@@ -1,0 +1,58 @@
+<% content_for :title, "Visual editor" %>
+
+<div class="govspeak-preview-output govspeak-guide">
+  <%= render "govuk_publishing_components/components/heading", {
+    text: "Visual editor",
+    font_size: "l",
+    heading_level: 1,
+    margin_bottom: 4
+  } %>
+
+  <p class="govuk-body">The GOV.UK Whitehall Experience team are continuing to improve experiences in publishing tools. The team has been working on a visual editor which is a What you see is what you get (WYSIWYG) editor.</p>
+  <p class="govuk-body">The tool is in alpha stage and currently supports limited features to format content. The content is formatted and displayed as it will look like on GOV.UK. You can view and copy the Govspeak markdown of the content.</p>
+  <p class="govuk-body">Your <a href="mailto:publishing-service-feedback@digital.cabinet-office.gov.uk" class="govuk-link">feedback</a> will help us to improve it.</p>
+
+  <div class="js-visual-editor__content" hidden>
+    <p>Hello world, this is the visual editor.</p>
+    <p><a href="example.com">Example link</a></p>
+    <h2>This is an H2 heading</h2>
+    <ol>
+      <li><p>First</p></li>
+      <li><p>Second</p></li>
+      <li><p>Third</p></li>
+    </ol>
+    <ul>
+      <li><p>One</p></li>
+      <li><p>Two</p></li>
+      <li><p>Three</p></li>
+    </ul>
+  </div>
+
+  <div class="js-visual-editor__container visual-editor__container"></div>
+
+  <div class="visual-editor__markdown-toolbar">
+    <%= render "govuk_publishing_components/components/button", {
+      text: "Show markdown",
+      classes: "js-visual-editor__markdown-button",
+    } %>
+  </div>
+
+  <div class="js-visual-editor__markdown-section visual-editor__markdown-section" hidden>
+
+    <%= render "govuk_publishing_components/components/heading", {
+      text: "Markdown version of the content in visual editor",
+      font_size: "m",
+      heading_level: 2,
+      margin_bottom: 4
+    } %>
+
+    <textarea readonly class="js-visual-editor__textarea visual-editor__textarea"></textarea>
+
+    <%= render "govuk_publishing_components/components/button", {
+      text: "Copy markdown",
+      classes: "js-visual-editor__copy-button",
+      margin_bottom: 4
+    } %>
+
+  </div>
+</div>
