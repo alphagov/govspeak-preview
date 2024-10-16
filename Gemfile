@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby File.read(".ruby-version")
 
-gem "rails", "7.2.1"
+gem "rails", "7.2.1.1"
 
 gem "dartsass-rails"
 gem "govspeak"
