@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "7.2.1"
 
+gem "bootsnap", require: false
 gem "dartsass-rails"
 gem "govspeak"
 gem "govuk_publishing_components"
