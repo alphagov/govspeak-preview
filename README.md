@@ -16,10 +16,6 @@ It shows how Govspeak looks on the GOV.UK website in mainstream formats.
 
 The guide also says when to use the various types of Govspeak, such as the different callout styles.
 
-## Deployment
-
-It's hosted on [Heroku](http://govspeak-preview.herokuapp.com/), and automatically deployed when `main` changes.
-
 ## Running locally
 
 ```
