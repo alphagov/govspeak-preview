@@ -122,8 +122,8 @@ GEM
       rake (>= 13)
     googleapis-common-protos-types (1.16.0)
       google-protobuf (>= 3.18, < 5.a)
-    govspeak (8.6.0)
-      actionview (>= 6, < 7.2.2)
+    govspeak (8.6.1)
+      actionview (>= 6, < 7.2.3)
       addressable (>= 2.3.8, < 2.8.8)
       govuk_publishing_components (>= 35.1)
       htmlentities (~> 4)
@@ -196,7 +196,7 @@ GEM
     mini_portile2 (2.8.7)
     minitest (5.25.1)
     msgpack (1.7.3)
-    net-imap (0.5.0)
+    net-imap (0.5.1)
       date
       net-protocol
     net-pop (0.1.2)
@@ -483,7 +483,7 @@ GEM
       nokogiri
     rexml (3.3.9)
     rinku (2.0.6)
-    rouge (4.4.0)
+    rouge (4.5.0)
     rspec-core (3.13.1)
       rspec-support (~> 3.13.0)
     rspec-expectations (3.13.2)
@@ -546,7 +546,7 @@ GEM
       google-protobuf (~> 4.26)
     sass-embedded (1.77.8-x86_64-linux-gnu)
       google-protobuf (~> 4.26)
-    securerandom (0.3.1)
+    securerandom (0.3.2)
     selenium-webdriver (4.21.1)
       base64 (~> 0.2)
       rexml (~> 3.2, >= 3.2.5)
