@@ -80,7 +80,7 @@ GEM
     bigdecimal (3.1.9)
     bootsnap (1.18.4)
       msgpack (~> 1.2)
-    brakeman (6.2.2)
+    brakeman (7.0.0)
       racc
     builder (3.3.0)
     capybara (3.40.0)
@@ -161,7 +161,7 @@ GEM
       rouge
       sprockets (>= 3)
       sprockets-rails
-    govuk_test (4.1.0)
+    govuk_test (4.1.1)
       brakeman (>= 5.0.2)
       capybara (>= 3.36)
       puma
@@ -562,7 +562,7 @@ GEM
     sass-embedded (1.81.0-x86_64-linux-gnu)
       google-protobuf (~> 4.28)
     securerandom (0.4.1)
-    selenium-webdriver (4.26.0)
+    selenium-webdriver (4.29.1)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
