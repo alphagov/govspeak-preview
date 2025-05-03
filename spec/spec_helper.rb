@@ -95,3 +95,8 @@ RSpec.configure do |config|
   #   # as the one that triggered the failure.
   #   Kernel.srand config.seed
 end
+
+def use_javascript_driver
+  WebMock.allow_net_connect!
+  Capybara.current_driver = Capybara.javascript_driver
+end
