@@ -5,6 +5,7 @@ gem "rails", "8.0.2"
 gem "bootsnap", require: false
 gem "dartsass-rails"
 gem "govspeak"
+gem "govuk_app_config"
 gem "govuk_publishing_components"
 gem "puma"
 gem "reverse_markdown"

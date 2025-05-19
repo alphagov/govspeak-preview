@@ -637,6 +637,7 @@ DEPENDENCIES
   capybara
   dartsass-rails
   govspeak
+  govuk_app_config
   govuk_publishing_components
   govuk_test
   listen
