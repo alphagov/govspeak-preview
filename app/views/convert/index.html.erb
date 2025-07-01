@@ -8,6 +8,13 @@
     margin_bottom: 4
   } %>
 
+  <% if !@error.blank? %>
+    <%= render "govuk_publishing_components/components/error_alert", {
+      margin_bottom: 4,
+      message: @error
+    } %>
+  <% end %>
+
   <% if !@govspeak_output.blank? %>
     <%= render "govuk_publishing_components/components/inset_text", {
       text: "Conversion and preview updated"

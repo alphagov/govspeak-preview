@@ -14,14 +14,18 @@ class GoogleDocsToGovspeak
     # Strip everything except the body
     body_html = doc.css("body")
 
-    markdown = ReverseMarkdown.convert(body_html.to_s)
+    begin
+      markdown = ReverseMarkdown.convert(body_html.to_s)
 
-    # The resulting markdown can sometimes contain &nbsp;'s. Translate them
-    # into spaces and make sure that we don't have too many.
-    markdown.gsub!("&nbsp;", " ")
-    markdown.gsub!("  ", " ")
+      # The resulting markdown can sometimes contain &nbsp;'s. Translate them
+      # into spaces and make sure that we don't have too many.
+      markdown.gsub!("&nbsp;", " ")
+      markdown.gsub!("  ", " ")
 
-    markdown
+      markdown
+    rescue Encoding::CompatibilityError
+      nil
+    end
   end
 
 private
