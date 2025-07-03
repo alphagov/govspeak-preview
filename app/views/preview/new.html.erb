@@ -37,6 +37,12 @@
       value: @govspeak_input
     } %>
 
+    <%= render "govuk_publishing_components/components/select", {
+      id: "locale",
+      label: "Locale",
+      options: @options
+    } %>
+
     <%= render "govuk_publishing_components/components/button", {
       text: "Preview",
     } %>
