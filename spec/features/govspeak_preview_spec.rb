@@ -46,4 +46,21 @@ RSpec.feature "Govspeak preview", type: :feature do
     expect(page).to have_css(".gem-c-govspeak.govuk-govspeak p", text: "Nulla finibus finibus hendrerit. In hac habitasse platea dictumst. Nam volutpat quam sed tellus ullamcorper ultrices. Maecenas hendrerit dolor lacus, sed commodo lectus sodales sed.")
     expect(page).to have_link("Nulla finibus finibus hendrerit", href: "https://www.lipsum.com/feed/html")
   end
+
+  scenario "Add Govspeak with translatable component label using Welsh as the locale" do
+    visit "/"
+
+    fill_in "govspeak_input", with: <<~GOVSPEAK
+      Gellir ychwanegu troednodiadau[^1].
+
+      [^1]: Ac yna wedi'i ddiffinio'n ddiweddarach.
+    GOVSPEAK
+    select "Welsh (Cymraeg)", from: "locale"
+    click_on "Preview"
+
+    expect(page).to have_css(
+      ".gem-c-govspeak.govuk-govspeak a.footnote",
+      text: "[troednodyn 1]",
+    )
+  end
 end
