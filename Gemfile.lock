@@ -128,8 +128,8 @@ GEM
       rake (>= 13)
     googleapis-common-protos-types (1.22.0)
       google-protobuf (~> 4.26)
-    govspeak (10.6.5)
-      actionview (>= 6, < 8.0.4)
+    govspeak (10.7.0)
+      actionview (>= 6, < 8.1.2)
       addressable (>= 2.3.8, < 2.8.8)
       govuk_publishing_components (>= 43)
       htmlentities (~> 4)
@@ -202,7 +202,7 @@ GEM
     matrix (0.4.3)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
-    minitest (5.26.0)
+    minitest (5.26.1)
     msgpack (1.8.0)
     net-imap (0.5.12)
       date
@@ -405,7 +405,7 @@ GEM
       prettyprint
     prettyprint (0.2.0)
     prism (1.4.0)
-    prometheus_exporter (2.3.0)
+    prometheus_exporter (2.3.1)
       webrick
     psych (5.2.6)
       date
@@ -464,7 +464,7 @@ GEM
       psych (>= 4.0.0)
       tsort
     regexp_parser (2.11.2)
-    reline (0.6.2)
+    reline (0.6.3)
       io-console (~> 0.5)
     request_store (1.7.0)
       rack (>= 1.4)
@@ -560,7 +560,7 @@ GEM
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
     statsd-ruby (1.5.0)
-    stringio (3.1.7)
+    stringio (3.1.8)
     terser (1.2.6)
       execjs (>= 0.3.0, < 3)
     thor (1.4.0)
