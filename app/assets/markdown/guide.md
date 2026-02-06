@@ -86,18 +86,13 @@ Steps need an extra line break after the final step (in other words, 2 full blan
 
 ##Buttons
 
-###Default button
+###Start button
 
-    {button}[Continue](https://gov.uk/random){/button}
+Use this button when creating a [service start point](https://design-system.service.gov.uk/patterns/start-using-a-service/). 
 
-which looks like this:
+Use text that’s consistent with the action you’re asking users to take - for example, 'Start now', 'Sign in' or 'Register'.
 
-{button}[Continue](https://gov.uk/random){/button}
-
-###Start now button
-
-To turn a button into a ['Start now' button](https://www.gov.uk/service-manual/design/start-pages#start-page-elements), you can add `start` to the button tag.  
-These buttons should only appear once per page, and be used at the start of a transaction.
+These buttons should only appear once per page.
 
     {button start}[Start now](https://gov.uk/random){/button}
 
@@ -292,3 +287,11 @@ We no longer add this Markdown to any new content. (You may still come across it
     $! This is an answer summary. $!
 
 If you see this Markdown, you can delete it.
+
+###Default button
+
+We no longer add this Markdown to any new content. We use the start button to link to transactions instead.
+
+    {button}[Continue](https://gov.uk/random){/button}
+
+If you see this Markdown, you can usually replace it with a start button.
