@@ -18,6 +18,19 @@ updates:
         - "govuk_test"
         - "rspec-*"
         - "webmock"
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: tuesday
+      time: "07:00"
+    allow:
+      - dependency-type: direct
+    cooldown:
+      default-days: 3
+    open-pull-requests-limit: 25
+
   - package-ecosystem: github-actions
     directory: /
     schedule:
