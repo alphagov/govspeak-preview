@@ -27,7 +27,7 @@ jobs:
       RAILS_ENV: test
     steps:
       - uses: actions/checkout@v6
-      - uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1.305.0
         with:
           bundler-cache: true
       - uses: alphagov/govuk-infrastructure/.github/actions/setup-node@main
