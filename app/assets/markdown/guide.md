@@ -18,7 +18,7 @@ If you use the acronym in singular and plural in your content, always put the pl
 
     *[PCSOs]: Police Community Support Officers
     *[PCSO]: Police Community Support Officer
-
+    
 ##Addresses
 
     $A
@@ -72,8 +72,8 @@ This is what they look like:
 We only use numbered lists for describing steps as part of a process. Do this by adding:
 
 <div class="code-snippet"></div>
-`s1. Add numbers.`
-`s2. Check numbers.`
+`s1. Add numbers.`  
+`s2. Check numbers.`  
 `s3. Love numbers.`
 
 This example follows the [style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#steps) and looks like:
@@ -88,7 +88,7 @@ Steps need an extra line break after the final step (in other words, 2 full blan
 
 ###Start button
 
-Use this button when creating a [service start point](https://design-system.service.gov.uk/patterns/start-using-a-service/).
+Use this button when creating a [service start point](https://design-system.service.gov.uk/patterns/start-using-a-service/). 
 
 Use text that’s consistent with the action you’re asking users to take - for example, 'Start now', 'Sign in' or 'Register'.
 
@@ -113,28 +113,6 @@ which looks like this:
 {button start cross-domain-tracking:UA-XXXXXX-Y}
   [Start now](https://example.com/external-service/start-now)
 {/button}
-
-##Cards
-
-Cards can be used to show more prominent links to other content, including extra details about those links.
-
-    {cards}
-        [Benefits](https://www.gov.uk/browse/benefits) Includes eligibility, appeals, tax credits and Universal Credit
-        [Births, deaths, marriages and care](https://www.gov.uk/browse/births-deaths-marriages) Parenting, civil partnerships, divorce and Lasting Power of Attorney
-        [Business and self-employed](https://www.gov.uk/browse/business) Tools and guidance for businesses
-        [Childcare and parenting](https://www.gov.uk/browse/childcare-parenting) Includes giving birth, fostering, adopting, benefits for children, childcare and schools
-        [Citizenship and living in the UK](https://www.gov.uk/browse/citizenship) Voting, community participation, life in the UK, international projects
-    {/cards}
-
-which looks like this:
-
-{cards}
-  [Benefits](https://www.gov.uk/browse/benefits) Includes eligibility, appeals, tax credits and Universal Credit
-  [Births, deaths, marriages and care](https://www.gov.uk/browse/births-deaths-marriages) Parenting, civil partnerships, divorce and Lasting Power of Attorney
-  [Business and self-employed](https://www.gov.uk/browse/business) Tools and guidance for businesses
-  [Childcare and parenting](https://www.gov.uk/browse/childcare-parenting) Includes giving birth, fostering, adopting, benefits for children, childcare and schools
-  [Citizenship and living in the UK](https://www.gov.uk/browse/citizenship) Voting, community participation, life in the UK, international projects
-{/cards}
 
 ##Callouts
 
@@ -188,12 +166,12 @@ Remember to add a call charges link when there are telephone numbers.
 This creates a contact box, which looks like this:
 
 $C
-Financial Conduct Authority
-<consumer.queries@fca.org.uk>
-Telephone: 0800 111 6768
-Monday to Friday, 8am to 6pm
-Saturday, 9am to 1pm
-[Find out about call charges](/call-charges)
+Financial Conduct Authority  
+<consumer.queries@fca.org.uk>  
+Telephone: 0800 111 6768  
+Monday to Friday, 8am to 6pm  
+Saturday, 9am to 1pm  
+[Find out about call charges](/call-charges)  
 $C
 
 Do not use bold for the contact team name. This is not accessible because it looks like a heading and can be confusing for users of assistive technology. Use heading Markdown above the contact Markdown instead if you need to draw attention to the information.
