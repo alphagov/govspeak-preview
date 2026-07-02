@@ -2,7 +2,14 @@ class ConvertController < ApplicationController
   def index; end
 
   def create
-    @govspeak_input = GoogleDocsToGovspeak.new(params[:upload][:file]).to_govspeak
+    file = params.dig(:upload, :file)
+
+    if file.blank?
+      @error = "Choose a file to convert"
+      return render :index
+    end
+
+    @govspeak_input = GoogleDocsToGovspeak.new(file).to_govspeak
 
     if @govspeak_input
       # Preview the converted Govspeak
