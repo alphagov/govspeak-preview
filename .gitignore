@@ -23,9 +23,11 @@
 # Ignore node_modules
 node_modules/
 
-# Ignore yarn files
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
-.yarn/cache
-.yarn/install-state.gz
+# Yarn modern
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
