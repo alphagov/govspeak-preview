@@ -8,3 +8,6 @@
 // which will ensure they are never loaded.
 
 //= require govuk_publishing_components/components/button
+//= require govuk_publishing_components/components/file-upload
+//= require govuk_publishing_components/components/service-navigation
+//= require govuk_publishing_components/components/skip-link
