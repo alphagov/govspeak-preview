@@ -4,7 +4,7 @@ class ConvertController < ApplicationController
   def create
     file = params.dig(:upload, :file)
 
-    if file.blank?
+    unless file.is_a?(ActionDispatch::Http::UploadedFile)
       @error = "Choose a file to convert"
       return render :index
     end
