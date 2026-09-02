@@ -54,6 +54,7 @@
     <% if !@govspeak_output.blank? %>
       <p class="govuk-!-margin-bottom-0">Conversion and preview updated below</p>
     <% end %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <% end %>
 </div>
 
