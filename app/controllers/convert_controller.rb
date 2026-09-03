@@ -6,7 +6,7 @@ class ConvertController < ApplicationController
 
     unless file.is_a?(ActionDispatch::Http::UploadedFile)
       @error = "Choose a file to convert"
-      return render :index
+      return render :index, status: :unprocessable_content
     end
 
     @govspeak_input = GoogleDocsToGovspeak.new(file).to_govspeak

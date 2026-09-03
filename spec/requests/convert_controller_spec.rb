@@ -18,7 +18,7 @@ RSpec.describe "ConvertController", type: :request do
   describe "POST /convert" do
     it "accepts HTML requests" do
       post "/convert"
-      expect(response).to have_http_status(:ok)
+      expect(response).to have_http_status(:unprocessable_content)
     end
 
     it "uploads when given a file" do
@@ -39,7 +39,7 @@ RSpec.describe "ConvertController", type: :request do
         },
       }
 
-      expect(response).to have_http_status(:ok)
+      expect(response).to have_http_status(:unprocessable_content)
       expect(response.body).to include("Choose a file to convert")
     end
 
