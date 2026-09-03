@@ -20,7 +20,7 @@ RSpec.feature "Converting to Govspeak", type: :feature do
 
     click_on "Convert"
 
-    expect(page.status_code).to eq(200)
+    expect(page.status_code).to eq(422)
     expect(page).to have_content("Choose a file to convert")
   end
 
