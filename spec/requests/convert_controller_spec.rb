@@ -49,5 +49,24 @@ RSpec.describe "ConvertController", type: :request do
       }
       expect(response).to have_http_status(:not_acceptable)
     end
+
+    context "when GoogleDocsToGovspeak#to_govspeak returns nil" do
+      let(:google_docs_to_govspeak_instance) { instance_double(GoogleDocsToGovspeak) }
+
+      before do
+        allow(GoogleDocsToGovspeak).to receive(:new).and_return(google_docs_to_govspeak_instance)
+        allow(google_docs_to_govspeak_instance).to receive(:to_govspeak).and_return(nil)
+      end
+
+      it "returns an error message" do
+        post "/convert", params: {
+          upload: {
+            file: fixture_file_upload("spec/support/fixtures/Sample Assessment Report.zip", "application/zip"),
+          },
+        }
+
+        expect(response.body).to include("Could not convert Google Doc. Check the instructions and try again.")
+      end
+    end
   end
 end
