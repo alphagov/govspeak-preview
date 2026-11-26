@@ -1,7 +1,6 @@
 #!/bin/bash
 
 bundle install
-yarn install
 
 if [[ $1 == "--live" ]] ; then
   GOVUK_APP_DOMAIN=www.gov.uk \
