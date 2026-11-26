@@ -10,7 +10,7 @@ RSpec.feature "Converting to Govspeak", type: :feature do
 
     click_on "Convert"
 
-    expect(page).to have_content("GOV.UK Notify")
+    expect(page).to have_text("GOV.UK Notify")
   end
 
   scenario "User submits the form without uploading a file" do
@@ -21,7 +21,7 @@ RSpec.feature "Converting to Govspeak", type: :feature do
     click_on "Convert"
 
     expect(page.status_code).to eq(422)
-    expect(page).to have_content("Choose a file to convert")
+    expect(page).to have_text("Choose a file to convert")
   end
 
   scenario "User attempts to convert a Google Doc with images" do
@@ -33,6 +33,6 @@ RSpec.feature "Converting to Govspeak", type: :feature do
 
     click_on "Convert"
 
-    expect(page).to have_content("Could not convert Google Doc. Check the instructions and try again.")
+    expect(page).to have_text("Could not convert Google Doc. Check the instructions and try again.")
   end
 end
